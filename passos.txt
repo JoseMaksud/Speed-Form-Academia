@@ -1,0 +1,6 @@
+Configurar o Git Local
+git config --global user.name "NOME AQUI"
+git config --global user.email "EMAIL AQUI"
+
+Criar o projeto 
+dotnet new mvc -o SpeedFormAcademias
