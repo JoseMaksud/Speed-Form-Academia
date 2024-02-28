@@ -1,0 +1,22 @@
+[
+    {
+        "Nome": "Musculação",
+        "Imagem":"\\img\\modalidades\\musculacao.jpg",
+        "descricao": "A Speed Form oferece treinamento de musculação com aparelhos e pesos livres. Isso permite que os alunos trabalhem em sua força, resistência e condicionamento físico."
+    },
+    {
+        "Nome": "Treinamento Funcional",
+        "Imagem":"\\img\\modalidades\\treinamentofuncional.jpg",
+        "descricao": "Além da musculação, a academia também oferece aulas funcionais. Essas aulas geralmente envolvem exercícios de corpo inteiro, focando na melhoria da mobilidade, equilíbrio e resistência."
+    },
+    {
+        "Nome": "Ritmos",
+        "Imagem":"\\img\\modalidades\\ritmos.jpg",
+        "descricao": "Para quem gosta de dançar, a Speed Form oferece aulas de dança e ritmos. Isso é uma ótima maneira de se exercitar enquanto se diverte."
+    },
+    {
+        "Nome": "Jiu-Jitsu",
+        "Imagem":"\\img\\modalidades\\jiujitsu.jpg",
+        "descricao": "O Jiu Jitsu é uma arte marcial japonesa que se concentra em técnicas de luta no solo. Ele enfatiza o uso de alavancas, estrangulamentos e imobilizações para controlar o oponente. Os praticantes de Jiu Jitsu aprendem a usar a força do oponente contra ele mesmo, tornando-o uma opção eficaz para autodefesa e competições esportivas."
+    }
+]
