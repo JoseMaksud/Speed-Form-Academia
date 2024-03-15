@@ -21,3 +21,7 @@ body {
   margin-bottom: 60px;
 }
 
+.logo img{
+  width: 300px !important;
+  height: 150px !important;
+}
