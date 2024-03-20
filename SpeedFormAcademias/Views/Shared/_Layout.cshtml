@@ -6,7 +6,9 @@
     <title>@ViewData["Title"] - SpeedFormAcademias</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="SlickNav/slicknav.css"/>
     <link rel="stylesheet" href="~/SpeedFormAcademias.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="bg-dark">
    <header class="header-area header-transparent">
@@ -19,7 +21,7 @@
 
           <div class="main-menu f-right d-none d-lg-block">
             <nav>
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-end mb-md-0">
               <li><a href="#" class="nav-link px-2 text-secondary">Página Inicial</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
@@ -31,6 +33,7 @@
         </div>
       </div>
     </div>
+    
   </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -50,6 +53,7 @@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
