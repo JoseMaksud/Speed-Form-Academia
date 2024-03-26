@@ -18,5 +18,10 @@
         "Nome": "Jiu-Jitsu",
         "Imagem":"\\img\\modalidades\\jiujitsu.jpg",
         "descricao": "O Jiu Jitsu é uma arte marcial japonesa que se concentra em técnicas de luta no solo. Ele enfatiza o uso de alavancas, estrangulamentos e imobilizações para controlar o oponente. Os praticantes de Jiu Jitsu aprendem a usar a força do oponente contra ele mesmo, tornando-o uma opção eficaz para autodefesa e competições esportivas."
+    },
+    {
+        "Nome": "Muay Thai",
+        "Imagem":"\\img\\modalidades\\muaythai.jpg",
+        "descricao": "O Muay Thai é uma luta marcial tailandesa, conhecida como a “luta das 8 armas”. Essas armas são as partes do corpo utilizadas nos golpes: dois cotovelos, dois punhos, dois joelhos e a combinação das duas canelas e dos dois pés."
     }
 ]
