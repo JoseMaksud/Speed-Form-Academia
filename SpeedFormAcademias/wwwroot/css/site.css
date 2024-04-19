@@ -4,6 +4,7 @@ nav {
   font-family: 'Mina', sans-serif;
   text-shadow: 0 0 20px #A95FD2;
   font-size: 20px;
+  margin-inline: 150px;
 }
 
 html {
@@ -34,3 +35,17 @@ body {
   height: 70px !important;
 }
 
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
