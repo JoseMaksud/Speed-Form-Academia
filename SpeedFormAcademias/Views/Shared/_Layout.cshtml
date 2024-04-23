@@ -15,25 +15,31 @@
    <header class="header-area header-transparent">
     <div class="main-header header-sticky">
       <div class="container-fluid">
-        <div class="menu-wrapper d-flex align-items-center justify-content-center">
-          <div class="logo">
-            <a href="/"><img src="~/img/logo.png" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="main-menu f-right d-none d-lg-block">
+          <div class="main-menu f-right d-none d-lg-block">
             <nav>
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-between p-5 text-uppercase mb-md-0">
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-between align-items-center p-5 text-uppercase mb-md-0">
+              <div class="icon">
+                  <a href="/"><img src="~/img/perfilicon.png" alt=""></a>
+              </div>   
               <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Academias</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Atividades</a></li>
+              <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                <div class="logo">
+                  <a href="/"><img src="~/img/logo.png" alt=""></a>
+                </div>
+              </div>
+              <li><a href="#" class="nav-link px-2 text-white">Nossa Loja</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Horários</a></li>
               <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
               </ul>
             </nav>
+        
+        
         </div>
+      </div>
+    </div>
+  </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
