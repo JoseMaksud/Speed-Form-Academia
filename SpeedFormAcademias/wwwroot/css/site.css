@@ -2,7 +2,7 @@
 
 nav {
   font-family: 'Mina', sans-serif;
-  text-shadow: 0 0 20px #A95FD2;
+  /* text-shadow: 0 0 20px #A95FD2; */
   font-size: 16px;
   font-weight: bold;
 }
@@ -14,12 +14,50 @@ html {
 .videoinicio {
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .videoinicio img {
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: -1;
+}
+
+.image-container
+{
+  position: relative;
+}
+
+.logocaveira 
+{
+  position: absolute;
+  top: -250px;
+  right: 0px;
+  width: 500px;
+  height: 500px;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #000 !important; 
+}
+
+.logo img {
+  width: 316px !important;
+  height: 71px !important;
+}
+
+.slicknav_menu {
+  display:none;
 }
 
 @media (min-width: 768px) {
@@ -30,24 +68,6 @@ html {
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
-.logo img {
-  width: 316px !important;
-  height: 71px !important;
-}
-
-.slicknav_menu {
-	display:none;
 }
 
 @media screen and (max-width: 40em) {
