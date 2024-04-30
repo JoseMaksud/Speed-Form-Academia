@@ -42,8 +42,8 @@ html {
 
 .imagem-bikes img
 {
-  width: 300px;
-  height: 300px;
+  width: 580px;
+  height: 500px;
 }
 
 
@@ -58,8 +58,30 @@ body {
 }
 
 .logo img {
-  width: 316px !important;
-  height: 71px !important;
+  width: 300px !important;
+  height: 100px !important;
+}
+
+.title 
+{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+p 
+{
+  font-size: 16px;
+}
+
+.botao 
+{
+  width: 217px;
+  height: 51px;
+  background-color: #F1C445;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
 }
 
 .slicknav_menu {
