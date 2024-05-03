@@ -11,6 +11,11 @@ html {
   font-size: 14px;
 }
 
+.frase {
+  z-index: -1;
+}
+
+
 .videoinicio {
   position: absolute;
   z-index: -1;
@@ -23,7 +28,6 @@ html {
 .videoinicio img {
   width: 100%;
   height: auto;
-  z-index: -1;
 }
 
 .image-container
@@ -39,6 +43,7 @@ html {
   width: 500px;
   height: 500px;
 }
+
 
 .imagem-bikes img
 {
