@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+html {
+  font-size: 16px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #000 !important; 
+}
 
 nav {
   font-family: 'Mina', sans-serif;
@@ -7,12 +17,25 @@ nav {
   font-weight: bold;
 }
 
-html {
-  font-size: 14px;
-}
 
 .frase {
+  position: relative;
+}
+
+.frase img {
+  position: absolute;
   z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.textofrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -51,17 +74,6 @@ html {
   height: 500px;
 }
 
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-  background-color: #000 !important; 
-}
-
 .logo img {
   width: 300px;
   height: 100px;
@@ -97,10 +109,6 @@ p
   html {
     font-size: 16px;
   }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 @media screen and (max-width: 40em) {
