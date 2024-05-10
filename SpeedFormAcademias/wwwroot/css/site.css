@@ -17,6 +17,10 @@ nav {
   font-weight: bold;
 }
 
+.iconsociais
+{
+  gap: 13px;
+}
 
 .frase {
   position: relative;
@@ -30,12 +34,14 @@ nav {
 }
 
 .textofrase {
-  position: absolute;
+  position: absolute; 
+  margin-top: 30%;
+  max-width: 500px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
 }
 
 
