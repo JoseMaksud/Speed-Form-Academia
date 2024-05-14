@@ -26,6 +26,7 @@ nav {
   position: relative;
 }
 
+
 .frase img {
   position: absolute;
   z-index: -1;
@@ -44,6 +45,33 @@ nav {
   left: 50%;
 }
 
+.loja
+{
+  position: relative;
+}
+
+.loja img {
+  position: absolute;
+  width: 1040px !important;
+  height: 650px !important;
+  z-index: 1;
+  margin-top: 60%;
+}
+
+.quadroloja {
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  margin-top: 75%;
+}
+
+
+.carrinholoja img{
+  width: 177px !important;
+  height: 316px !important;
+  left: 83%;
+  margin-top: 80%;
+}
 
 .videoinicio {
   position: absolute;
