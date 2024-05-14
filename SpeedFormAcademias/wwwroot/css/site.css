@@ -73,6 +73,13 @@ nav {
   margin-top: 80%;
 }
 
+.textoloja{
+  position: absolute;
+  left: 30%;
+  margin-top: 115%;
+}
+
+
 .videoinicio {
   position: absolute;
   z-index: -1;
