@@ -79,6 +79,20 @@ nav {
   margin-top: 115%;
 }
 
+.imagemsecundaria img{
+  width: 290px !important;
+  width: 160px !important;
+}
+
+.imagemprincipal img{
+  width: 860px !important;
+  width: 600px !important;
+}
+
+.imagensloja {
+  position: absolute;
+  margin-top: 150%;
+}
 
 .videoinicio {
   position: absolute;
