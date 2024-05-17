@@ -82,6 +82,7 @@ nav {
 .imagemsecundaria img{
   width: 290px !important;
   width: 160px !important;
+  margin-block: 20px;
 }
 
 .imagemprincipal img{
@@ -92,6 +93,7 @@ nav {
 .imagensloja {
   position: absolute;
   margin-top: 150%;
+  width: 100%;
 }
 
 .videoinicio {
