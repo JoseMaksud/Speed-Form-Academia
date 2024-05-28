@@ -91,12 +91,27 @@ strong {
 }
 
 .nossaLoja {
-    padding-block: 20%;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
 }
 
 .nossaLoja h3 {
     font-size: 32px;
     font-weight: bold;
+}
+
+.nossaLoja p {
+    padding-top: 50px;
+    margin-left: 40px;
+    max-width: 300px;
+}
+
+.lojaSimbolo {
+    display: flex;
+    justify-content: right;
+    align-items: start;
 }
 
 .lojaCarrosel {
