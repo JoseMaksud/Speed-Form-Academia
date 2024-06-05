@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+@import url('./header.css');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: "Mina", sans-serif;
+  color: white;
+}
+
+.container {
+  padding: 125px;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  vertical-align: top;
+}
