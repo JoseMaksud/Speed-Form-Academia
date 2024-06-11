@@ -3,6 +3,9 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 
 @import url('./header.css');
+@import url('./sobre.css');
+@import url('./loja.css');
+@import url('./academias.css');
 
 * {
   border: 0;
