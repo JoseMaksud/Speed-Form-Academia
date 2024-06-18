@@ -46,3 +46,59 @@
     width: 155px;
     height: 34px;
 }
+
+.academiasMainContent {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.academiasMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.academiasMain h3 {
+    width: 100%;
+    font-size: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+} 
+
+.academiasMain p {
+    max-width: 440px;
+}
+
+.academiasMain button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    background-color: #F1C445;
+    color: white;
+    border-radius: 20px;
+}
+
+.academiasImagem {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-start;
+}
+
+.academiasFooter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
