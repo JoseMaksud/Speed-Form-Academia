@@ -6,6 +6,7 @@
 @import url('./sobre.css');
 @import url('./loja.css');
 @import url('./academias.css');
+@import url('./mensalidade.css');
 
 * {
   border: 0;
