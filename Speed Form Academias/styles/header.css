@@ -5,8 +5,6 @@
   background: url("../img/videoInicio.png") no-repeat center / cover;
 
   z-index: -1;
-
-  opacity: .5;
 }
 
 header{
