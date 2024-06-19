@@ -1,0 +1,106 @@
+.mensalidade {
+    width: 740px;
+    height: 630px;
+    border: 5px solid white;
+    border-radius: 40px;
+    background-color: #5B5B5B;
+    margin: auto;
+}
+
+.precos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precoMensalContainer {
+    width: 235px;
+    height: 490px;
+    border: 5px solid white;
+    border-radius: 900px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precoMensal strong {
+    font-size: 64px;
+    color: #F1C445;
+}
+
+.precoMensal p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.graficoMensal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.precoSemestralContainer {
+    width: 235px;
+    height: 490px;
+    border: 5px solid white;
+    border-radius: 900px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precoSemestral strong {
+    font-size: 64px;
+    color: #F1C445;
+}
+
+.precoSemestral p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.graficoSemestral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.precoAnualContainer {
+    width: 235px;
+    height: 490px;
+    border: 5px solid white;
+    border-radius: 900px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precoAnual strong {
+    font-size: 64px;
+    color: #F1C445;
+}
+
+.precoAnual p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.graficoAnual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
