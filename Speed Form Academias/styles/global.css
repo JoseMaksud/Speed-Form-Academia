@@ -41,3 +41,17 @@ button{
 img{
   vertical-align: top;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #000000;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid #474747;
+  border-radius: 40px;
+}
