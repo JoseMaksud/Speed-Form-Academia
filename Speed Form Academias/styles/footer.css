@@ -7,6 +7,8 @@ ul {
 }
 
 .footer {
+    width: 1200px;
+    margin: auto;
     background-color: black;
     padding: 70px 0;
 }
