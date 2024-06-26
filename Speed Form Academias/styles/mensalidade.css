@@ -8,9 +8,7 @@
 }
 
 .titleMensalidade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 105px;
     padding-bottom: 50px;
     font-size: 40px;
     color: black;
