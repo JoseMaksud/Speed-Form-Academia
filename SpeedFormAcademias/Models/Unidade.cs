@@ -1,13 +1,19 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace SpeedFormAcademias.Models;
 
+[Table("Unidade")]
 public class Unidade
 {
-    public string Nome { get; set; }
-    public string Localizacao { get; set; }
-    public List<string> Imagem { get; set; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }
 
-    public Unidade()
-    {
-        Imagem = new List<string>();
-    }
+     [Required(ErrorMessage = "Por favor, informe o Nome")]
+    [StringLength(30, ErrorMessage = "O nome deve possuir no máximo 30 caracteres")]
+    public string Nome { get; set; }
+
+    [StringLength(500)]
+    public string Localizacao { get; set; }
 }

@@ -4,3 +4,31 @@ git config --global user.email "EMAIL AQUI"
 
 Criar o projeto 
 dotnet new mvc -o SpeedFormAcademias
+
+NuGet Gallery
+    Shift + Ctlr + P
+    - Pesquisar e instalar:
+        Microsoft.EntityFrameworkCore.Tools
+        Microsoft.VisualStudio.Web.CodeGeneration.Design
+        Microsoft.EntityFrameworkCore.SqlServer
+        
+        EntityFrameworkCore
+        EntityFrameworkCore.Design
+        EntityFrameworkCore.InMemory
+        AspNetCore.Identity.EntityFrameworkCore
+
+Criar as classes de dados - Pasta Models
+
+Criar a pasta Data e a classe de Contexto
+
+Criar a ConnectionString no arquivo appsettings.json
+
+Criar oo serviço de conexão no arquivo Program.cs 
+
+Executar no terminal:
+dotnet tool install --global dotnet-aspnet-codegenerator --version 8.0.1
+
+Criar um Controller - CRUD: 
+dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext --relativeFolderPath Controllers -udl
+dotnet-aspnet-codegenerator controller -name TamanhosController -m Tamanho -dc AppDbContext --relativeFolderPath Controllers -udl
+dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext --relativeFolderPath Controllers -udl
