@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SpeedFormAcademias.Controllers;
 
-[Authorize(Roles = "Administrador, Funcionário")]
+[Authorize(Roles = "Administrador")]
 public class AdminController : Controller
 {
     private readonly ILogger<AdminController> _logger;

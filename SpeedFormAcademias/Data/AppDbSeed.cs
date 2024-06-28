@@ -105,7 +105,7 @@ public class AppDbSeed
         List<IdentityUser> users = new(){
             new IdentityUser(){
                 Id = Guid.NewGuid().ToString(),
-                Email = "admin@SPEEDFORM.com",
+                Email = "admin@speedform.com",
                 NormalizedEmail = "ADMIN@SPEEDFORM.COM",
                 UserName = "Admin",
                 NormalizedUserName = "ADMIN",

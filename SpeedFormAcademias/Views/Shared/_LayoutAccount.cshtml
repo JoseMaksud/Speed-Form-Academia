@@ -21,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <title>
-        CozaStore - @ViewData["Title"]
+        SpeedForm - @ViewData["Title"]
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
@@ -43,11 +43,11 @@
             <div class="col-12">
                 <!-- Navbar -->
                 <nav
-                    class="navbar navbar-expand-lg border-radius-xl top-0 z-index-3 position-absolute my-3 py-2 start-0 end-0 mx-4">
+                    class="navbar navbar-expand-lg border-radius-xl top-0 z-index-3 position-absolute my-3 py-2 start-0 end-0 mx-3">
                     <div class="container-fluid ps-2 pe-0">
                         <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " asp-action="Index"
                             asp-controller="Home">
-                            <img src="~/img/icons/logo-02.png" class="navbar-brand-img" alt="main_logo">
+                            <img src="~/img/icons/logo.png" class="navbar-brand-img" alt="main_logo">
                         </a>
                         <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
@@ -63,8 +63,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link d-flex align-items-center me-2 text-white" aria-current="page"
                                         asp-action="Index" asp-controller="Home">
-                                        <i class="fa fa-store opacity-6 text-white me-2"></i>
-                                        Voltar a Loja
+                                        <i class="fa fa-dumbbell opacity-6 text-white me-2"></i>
+                                        Voltar a Academia
                                     </a>
                                 </li>
                             </ul>
@@ -88,12 +88,12 @@
                     <div class="copyright text-center text-sm text-white">
                         ©
                         @DateTime.Now.Year,
-                        desenvolvido por <a href="https://gallojunior.github.io" class="font-weight-bold text-warning"
+                        desenvolvido para <a href="https://josemaksud.github.io" class="font-weight-bold text-darkk"
                             target="_blank">
-                            José Antonio Gallo Junior
+                            SpeedForm
                         </a>
                         com template de
-                        <a href="https://www.creative-tim.com" class="font-weight-bold text-warning"
+                        <a href="https://www.creative-tim.com" class="font-weight-bold text-darkk"
                             target="_blank">Creative
                             Tim</a>.
                     </div>
@@ -127,3 +127,12 @@
 </body>
 
 </html>
+
+<style>
+    .text-darkk {
+        color: black !important; 
+    }
+    a:hover {
+        color: #F1C445 !important; 
+    }
+</style>
