@@ -15,4 +15,6 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Unidade> Unidades { get; set; }
     public DbSet<UnidadeFoto> UnidadeFotos { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
+
+    
 }

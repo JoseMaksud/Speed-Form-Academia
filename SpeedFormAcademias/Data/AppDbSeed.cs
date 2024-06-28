@@ -86,7 +86,7 @@ public class AppDbSeed
             Destaque = false
         });
         builder.Entity<UnidadeFoto>().HasData(unidadeFotos);
-
+        
 
         #region Populate Roles - Perfis de Usuário
         List<IdentityRole> roles = new()
@@ -126,7 +126,7 @@ public class AppDbSeed
                 Nome = "SpeedForm",
                 Foto = "/img/usuarios/avatar.png"
             },
-        };
+        };  
         builder.Entity<Usuario>().HasData(usuarios);
         #endregion
 
