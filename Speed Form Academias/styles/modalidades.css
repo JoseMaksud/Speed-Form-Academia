@@ -1,0 +1,42 @@
+.sessaoModalidades {
+    width: 100%;
+    height: 1060px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/backgroundModalidades.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modalidades {
+    width: 1225px;
+    height: 650px;
+    gap: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalidadesFotos {
+    width: 100%;
+    max-width: 1225px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.titleModalidades {
+    padding: 105px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    color: black;
+}
+
+.titleModalidades h1 {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}

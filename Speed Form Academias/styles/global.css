@@ -8,6 +8,7 @@
 @import url('./academias.css');
 @import url('./mensalidade.css');
 @import url('./footer.css');
+@import url('./modalidades.css');
 
 * {
   border: 0;
