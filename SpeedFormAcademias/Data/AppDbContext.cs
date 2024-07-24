@@ -16,5 +16,10 @@ public class AppDbContext : IdentityDbContext
     public DbSet<UnidadeFoto> UnidadeFotos { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
 
-    
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        AppDbSeed seed = new(builder);
+        base.OnModelCreating(builder);
+    }
+
 }
