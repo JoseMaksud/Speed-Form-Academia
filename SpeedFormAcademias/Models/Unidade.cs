@@ -16,4 +16,9 @@ public class Unidade
 
     [StringLength(500)]
     public string Localizacao { get; set; }
+
+    [StringLength(500)]
+    public string LocalizacaoFoto { get; set; }
+
+    public ICollection<UnidadeFoto> Fotos { get; set; }
 }
