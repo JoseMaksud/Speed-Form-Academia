@@ -76,44 +76,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class='nav-link text-white @(ViewData["Title"].ToString() == "Categorias" ? "active bg-gradient-warning" : "")'
-            asp-controller="Categorias" asp-action="Index">
+          <a class='nav-link text-white @(ViewData["Title"].ToString() == "Modalidades" ? "active bg-gradient-warning" : "")'
+            asp-controller="Modalidades" asp-action="Index">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">category</i>
             </div>
-            <span class="nav-link-text ms-1">Categorias</span>
+            <span class="nav-link-text ms-1">Modalidades</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class='nav-link text-white @(ViewData["Title"].ToString() == "Cores" ? "active bg-gradient-warning" : "")'
-            asp-controller="Cores" asp-action="Index">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">palette</i>
-            </div>
-            <span class="nav-link-text ms-1">Cores</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class='nav-link text-white @(ViewData["Title"].ToString() == "Tamanhos" ? "active bg-gradient-warning" : "")'
-            asp-controller="Tamanhos" asp-action="Index">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">format_size</i>
-            </div>
-            <span class="nav-link-text ms-1">Tamanhos</span>
-          </a>
-        </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Segurança</h6>
-        </li>
-        <li class="nav-item">
-          <a class='nav-link text-white @(ViewData["Title"].ToString() == "Usuários" ? "active bg-gradient-warning" : "")'
-            asp-controller="Usuarios" asp-action="Index">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">account_circle</i>
-            </div>
-            <span class="nav-link-text ms-1">Usuários</span>
-          </a>
-        </li>
       </ul>
     </div>
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">
@@ -170,8 +139,8 @@
             <div class="copyright text-center text-sm text-muted">
               ©
               @DateTime.Now.Year,
-              desenvolvido por <a href="https://gallojunior.github.io" class="font-weight-bold" target="_blank">
-                José Antonio Gallo Junior
+              desenvolvido para a Academia SpeedForm Academias por alunos da etec, Acesse o projeto: <a href="https://josemaksud.github.io" class="font-weight-bold" target="_blank">
+                José Francisco Dos Santos Neto
               </a>
               com template de
               <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>.

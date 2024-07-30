@@ -62,30 +62,30 @@ public class AppDbSeed
         #endregion
 
 
-        // List<UnidadeFoto> unidadeFotos = new();
-        // for (int i = 1; i <= 12; i++)
-        //     unidadeFotos.Add(new UnidadeFoto()
-        //     {
-        //         Id = i,
-        //         UnidadeId = i,
-        //         ArquivoFoto = $"/images/unidades/{i}/1.jpg",
-        //         Destaque = true
-        //     });
-        // unidadeFotos.Add(new UnidadeFoto()
-        // {
-        //     Id = 3,
-        //     UnidadeId = 1,
-        //     ArquivoFoto = @"/images/unidades/5/2.jpg",
-        //     Destaque = false
-        // });
-        // unidadeFotos.Add(new UnidadeFoto()
-        // {
-        //     Id = 4,
-        //     UnidadeId = 1,
-        //     ArquivoFoto = $"/images/unidades/5/3.jpg",
-        //     Destaque = false
-        // });
-        // builder.Entity<UnidadeFoto>().HasData(unidadeFotos);
+        List<UnidadeFoto> unidadeFotos = new();
+        for (int i = 1; i <= 12; i++)
+            unidadeFotos.Add(new UnidadeFoto()
+            {
+                Id = i,
+                UnidadeId = i,
+                ArquivoFoto = $"/images/unidades/{i}/1.jpg",
+                Destaque = true
+            });
+        unidadeFotos.Add(new UnidadeFoto()
+        {
+            Id = 13,
+            UnidadeId = 1,
+            ArquivoFoto = @"/images/unidades/1/2.jpg",
+            Destaque = false
+        });
+        unidadeFotos.Add(new UnidadeFoto()
+        {
+            Id = 14,
+            UnidadeId = 1,
+            ArquivoFoto = $"/images/unidades/1/3.jpg",
+            Destaque = false
+        });
+        builder.Entity<UnidadeFoto>().HasData(unidadeFotos);
         
 
         #region Populate Roles - Perfis de Usuário

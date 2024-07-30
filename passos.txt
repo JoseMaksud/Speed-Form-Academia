@@ -30,4 +30,4 @@ dotnet tool install --global dotnet-aspnet-codegenerator --version 8.0.1
 
 Criar um Controller - CRUD: 
 dotnet-aspnet-codegenerator controller -name UnidadesController -m Unidade -dc AppDbContext --relativeFolderPath Controllers -udl
-dotnet-aspnet-codegenerator controller -name ModalidadesController -m Modalidade-dc AppDbContext --relativeFolderPath Controllers -udl
+dotnet-aspnet-codegenerator controller -name ModalidadesController -m Modalidade -dc AppDbContext --relativeFolderPath Controllers -udl

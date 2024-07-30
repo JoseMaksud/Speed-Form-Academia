@@ -10,8 +10,8 @@ public class Unidade
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
-     [Required(ErrorMessage = "Por favor, informe o Nome")]
-    [StringLength(30, ErrorMessage = "O nome deve possuir no máximo 30 caracteres")]
+    [Required(ErrorMessage = "Por favor, informe o Nome")]
+    [StringLength(100, ErrorMessage = "O nome deve possuir no máximo 100 caracteres")]
     public string Nome { get; set; }
 
     [StringLength(500)]
