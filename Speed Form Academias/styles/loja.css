@@ -1,30 +1,39 @@
 .nossaLoja {
-    padding-top: 20%;
     width: 100%;
-    height: 1500px;
-    padding-inline: 125px;
-    /* background: url(../img/backgroundLoja.png); */
+    height: 900px;
+    background: url(../img/backgroundLoja.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-.nossaLoja h3 {
+.nossaLojaTexto {
+    width: 600px;
+    height: 200px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.TextoNossaLoja {
+    flex-direction: column;
+}
+
+
+.TextoNossaLoja h3 {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.nossaLoja p {
-    padding-top: 50px;
-    margin-left: 40px;
-    max-width: 300px;
-}
 
 .lojaSimbolo {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: flex-start;
 }
 
