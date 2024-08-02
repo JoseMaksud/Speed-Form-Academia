@@ -1,4 +1,4 @@
-.videoInicio{
+.videoInicio {
   width: 100%;
   height: 100%;
 
@@ -7,7 +7,7 @@
   z-index: -1;
 }
 
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,8 +23,10 @@ header{
   margin-inline: 50px;
 }
 
-.navbar .navbarGrupo{
+.navbar .navbarGrupo {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 
   & i {
@@ -39,4 +41,34 @@ header{
 .navbar a {
   text-decoration: none;
   color: white;
+}
+
+.buttonHeader {
+  width: 197px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.menuSelecionar {
+  width: 70px;
+  height: 37px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonHeader a i {
+  font-size: 16px;
+  margin-left: 40px;
+  text-align: center;
 }
