@@ -9,6 +9,7 @@
 @import url('./mensalidade.css');
 @import url('./footer.css');
 @import url('./modalidades.css');
+@import url('./dropdown.css');
 
 * {
   border: 0;
