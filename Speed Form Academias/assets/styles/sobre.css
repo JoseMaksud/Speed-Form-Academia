@@ -7,17 +7,21 @@
     background: url(../img/sobrenosTexturas.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center; 
 }
 
 .sobreNosTexto {
     max-width: 700px;
     padding-left: 100px;
+    box-sizing: border-box;
 }
 
 .sobreNosTexto h3 {
-    font-size: 32px;
-    padding-bottom: 50px;
+    font-size: 2em;
+    padding-bottom: 50px; 
     font-family: "Gemunu Libre", sans-serif;
 }
 
@@ -32,5 +36,53 @@ strong {
     height: 35px;
     font-family: "Gemunu Libre", sans-serif;
     border-radius: 20px;
-    margin-top: 150px;
+    margin-top: 150px; 
+}
+
+@media (max-width: 1200px) {
+    .sobreNos {
+        height: 800px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sobreNos {
+        flex-direction: column; 
+        justify-content: center; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .sobreNosTexto {
+        padding-left: 0; 
+        padding-top: 20px; 
+        max-width: 90%;
+        margin: 0 auto; 
+    }
+
+    .sobreNosTexto h3 {
+        font-size: 1.5em; 
+        padding-bottom: 20px;
+    }
+
+    .sobreNosTexto button {
+        width: 100%;
+        max-width: none; 
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobreNos {
+        height: auto; 
+    }
+
+    .sobreNosTexto h3 {
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    .sobreNosTexto button {
+        width: 100%; 
+    }
 }
