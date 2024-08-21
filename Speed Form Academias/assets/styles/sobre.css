@@ -39,6 +39,10 @@ strong {
     margin-top: 150px; 
 }
 
+button:hover {
+    background-color: #f1c345c5;
+}
+
 @media (max-width: 1200px) {
     .sobreNos {
         height: 800px; 

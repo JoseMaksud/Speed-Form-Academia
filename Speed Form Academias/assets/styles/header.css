@@ -81,3 +81,11 @@ header {
   margin-left: 40px;
   text-align: center;
 }
+
+.navbar i:hover {
+  color: #F1C445;
+}
+
+.navbar a:hover {
+  color: #F1C445;
+}
