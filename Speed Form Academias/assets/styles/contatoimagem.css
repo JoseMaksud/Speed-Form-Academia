@@ -1,0 +1,40 @@
+.sessaoContato {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.contatoImagem img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+}
+
+.contatoTexto {
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contatoBotao button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1C445;
+    color: white;
+    width: 300px;
+    height: 35px;
+    font-family: "Gemunu Libre", sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #f1c345c5;
+}

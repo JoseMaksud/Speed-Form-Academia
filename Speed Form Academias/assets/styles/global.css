@@ -10,6 +10,7 @@
 @import url('./footer.css');
 @import url('./modalidades.css');
 @import url('./dropdown.css');
+@import url('./contatoimagem.css');
 
 * {
   border: 0;
