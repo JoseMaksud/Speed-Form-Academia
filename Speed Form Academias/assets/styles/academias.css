@@ -1,6 +1,6 @@
 .sessaoAcademias {
     width: 100%;
-    height: 1060px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,32 +8,42 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 20px 0;
 }
 
 .academias {
     width: 1200px;
-    height: 650px;
+    max-width: 95%;
+    height: auto;
     background-color: black;
     padding: 30px;
     border-radius: 50px;
     border: 3px solid white;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 .academiasHeader {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
+}
+
+.academiasHeader img {
+    margin-right: 20px;
+}
+
+.academiasHeader p {
+    text-align: center;
+    margin: 0 10px;
 }
 
 .academiasHeader strong {
     color: #F1C445;
     font-size: 48px;
-}
-
-.academiasHeader p {
-    text-align: center;
 }
 
 .buttonsAcademias {
@@ -45,63 +55,62 @@
     justify-content: center;
     align-items: center;
     padding: auto;
+    margin: auto;
+}
 
-    & .btn-selecionado {
-        width: 195px;
-        height: 50px;
-        border-radius: 50px;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.4);
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-    }
+.buttonsAcademias .btn-selecionado, .buttonsAcademias .btn {
+    width: 195px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
 
-    & .btn {
-        width: 195px;
-        height: 50px;
-        border-radius: 50px;
-        cursor: pointer;
-        background-color: transparent;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-    }
+.buttonsAcademias .btn-selecionado {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.buttonsAcademias .btn {
+    background-color: transparent;
 }
 
 .academiasMainContent {
-    width: 90%;
-    height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .academiasMain {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-start;
     justify-content: center;
     width: 50%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .academiasMain h3 {
-    width: 100%;
     font-size: 32px;
     padding-bottom: 32px;
-    padding-right: 100px;
     text-align: center;
-    display: flex;
-    justify-content: end;
+    width: 100%;
 }
 
 .academiasMain p {
     max-width: 440px;
+    margin: auto;
 }
 
 .academiasMainButton {
-    width: 78%;
+    width: auto;
+    margin: auto;
 }
 
 .academiasMain button {
@@ -120,12 +129,65 @@
 .academiasImagem {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
 }
 
 .academiasFooter {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .academias {
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .academiasHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .academiasHeader p {
+        width: 100%;
+    }
+
+    .academiasHeader p:nth-child(2),
+    .academiasHeader p:nth-child(3) {
+        display: none;
+    }
+
+    .buttonsAcademias {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .buttonsAcademias .btn-selecionado, .buttonsAcademias .btn {
+        width: 48%;
+        margin: 2px;
+    }
+
+    .academiasMainContent {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .academiasMain {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .academiasImagem {
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
 }
