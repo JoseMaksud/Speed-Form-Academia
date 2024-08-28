@@ -130,3 +130,71 @@
     justify-content: center;
     margin-top: 25px;
 }
+
+@media (max-width: 1024px) {
+    .sessaoMensalidades {
+        height: auto;
+    }
+
+    .titleMensalidade {
+        padding: 50px 20px 5px 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .mensalidade {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .precos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .precoMensalContainer,
+    .precoSemestralContainer,
+    .precoAnualContainer {
+        width: 80%;
+        height: 400px;
+        margin: 20px 0;
+        border-radius: 900px;
+    }
+
+    .precoMensalContainer strong,
+    .precoSemestralContainer strong,
+    .precoAnualContainer strong {
+        font-size: 48px;
+    }
+
+    .graficoMensal,
+    .graficoSemestral,
+    .graficoAnual {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleMensalidade {
+        font-size: 24px;
+        padding: 30px 10px 5px 10px;
+    }
+
+    .precoMensalContainer,
+    .precoSemestralContainer,
+    .precoAnualContainer {
+        width: 100%;
+        height: 350px;
+        margin: 10px 0;
+        border-radius: 900px;
+    }
+
+    .precoMensalContainer strong,
+    .precoSemestralContainer strong,
+    .precoAnualContainer strong {
+        font-size: 36px;
+    }
+}
