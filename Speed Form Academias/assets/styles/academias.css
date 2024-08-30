@@ -149,17 +149,17 @@
 
     .academiasHeader {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
+    .academiasHeader img {
+        margin: 0 auto 20px;
+    }
 
     .academiasHeader p {
         width: 100%;
-    }
-
-    .academiasHeader p:nth-child(2),
-    .academiasHeader p:nth-child(3) {
-        display: none;
+        margin: 5px 0;
     }
 
     .buttonsAcademias {
