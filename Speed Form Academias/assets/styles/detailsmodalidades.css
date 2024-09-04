@@ -15,29 +15,21 @@
     box-sizing: border-box;
 }
 
-.treinoTexto, .treinoTextoSemImagem {
+.textoParte1, .textoParte2, .textoParte3 {
     color: #fff;
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-.treinoTexto {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-sizing: border-box;
-}
-
-.treinoTextoInicial {
+.textoParte1 {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     gap: 20px;
-    box-sizing: border-box;
     flex-wrap: wrap; /* Permite a quebra se necessário */
 }
 
-.treinoTextoInicial img {
+.textoParte1 img {
     width: 100%;
     height: auto;
     max-width: 510px;
@@ -45,7 +37,7 @@
     box-sizing: border-box;
 }
 
-.treinoTextoInicial p {
+.textoParte1 p {
     flex: 1;
     margin: 0;
     font-size: 16px; /* Ajuste o tamanho do texto conforme necessário */
@@ -54,67 +46,58 @@
     overflow-wrap: break-word;
 }
 
-.imgFinalModalidades img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+.textoParte3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.textoParte3 img {
+    width: 100%;
     height: auto;
+    max-width: 1225px;
     box-sizing: border-box;
 }
 
-.treinoTexto p, .treinoTextoSemImagem p {
-    margin: 0;
-    flex: 1;
-    box-sizing: border-box;
-}
-
-.treinoTextoSemImagem {
+.textoParte2 {
     text-align: left;
+}
+
+.textoParte2 p {
+    margin: 0;
+    font-size: 16px; /* Ajustar o tamanho do texto conforme necessário */
     box-sizing: border-box;
+    line-height: 1.5; /* Melhora a legibilidade */
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
-    .treinoTexto, .treinoTextoInicial {
+    .textoParte1, .textoParte3 {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .treinoTexto img, .treinoTextoInicial img {
+    .textoParte1 img, .textoParte3 img {
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
-    }
-
-    .treinoTexto, .treinoTextoSemImagem {
-        padding: 15px;
-    }
-
-    .sessaoTreino {
-        padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .treinoTexto, .treinoTextoInicial {
+    .textoParte1, .textoParte3 {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .treinoTexto img, .treinoTextoInicial img {
+    .textoParte1 img, .textoParte3 img {
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
     }
 
-    .treinoTexto p, .treinoTextoSemImagem p {
+    .textoParte1 p, .textoParte2 p, .textoParte3 p {
         font-size: 14px;
-    }
-
-    .treinoTexto, .treinoTextoSemImagem {
-        padding: 10px;
-    }
-
-    .sessaoTreino {
-        padding: 5px;
     }
 }
