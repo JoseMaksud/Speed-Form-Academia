@@ -1,17 +1,3 @@
-const cardsContainer = document.querySelector(".containerCarrousel");
-
-cardsContainer.addEventListener("click", (e) => {
-  const target = e.target.closest(".card");
-
-  if (!target) return;
-
-  cardsContainer.querySelectorAll(".card").forEach((card) => {
-    card.classList.remove("active");
-  });
-
-  target.classList.add("active");
-});
-
 let lastScrollTop = 0;
 let timer;
 const header = document.querySelector('header');
