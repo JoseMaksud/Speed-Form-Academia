@@ -1,0 +1,72 @@
+.sessaoDetalhesAcademias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.detalhesAcademias {
+    width: 100%;
+    max-width: 1225px;
+}
+
+.titleDetalhesAcademias {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.detalhesAcademiasFotos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto1 foto4 mapa";
+    margin: 0 auto;
+}
+
+.detalhesAcademiasFotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalhesAcademiasFotos img:nth-child(1) {
+    grid-area: foto1;
+    height: 400px;
+}
+
+.detalhesAcademiasFotos img:nth-child(2) {
+    grid-area: foto2;
+    height: 200px;
+}
+
+.detalhesAcademiasFotos img:nth-child(3) {
+    grid-area: foto3;
+    height: 200px;
+}
+
+.detalhesAcademiasFotos img:nth-child(4) {
+    grid-area: foto4;
+    height: 200px;
+}
+
+.detalhesAcademiasFotos img:nth-child(5) {
+    grid-area: mapa;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .detalhesAcademiasFotos {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "mapa";
+    }
+}
