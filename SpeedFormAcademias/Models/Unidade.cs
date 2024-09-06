@@ -20,5 +20,9 @@ public class Unidade
     [StringLength(500)]
     public string LocalizacaoFoto { get; set; }
 
+    [Display(Name = "Descrição Resumida")]
+    [StringLength(1000, ErrorMessage = "A Descrição Resumida deve possuir no máximo 1000 caracteres")]
+    public string Descricao { get; set; }
+
     public ICollection<UnidadeFoto> Fotos { get; set; }
 }
