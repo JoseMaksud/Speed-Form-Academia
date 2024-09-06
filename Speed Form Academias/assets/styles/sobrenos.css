@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-around;
     position: relative;
-    margin-bottom: 20px;
+    margin-block: 20px;
 }
 
 .carrossel-linha {
@@ -76,7 +76,7 @@
 
 .conteudo-imagem {
     width: 60%;
-    height: 200px;
+    height: 400px;
     background-color: #444;
     border-radius: 20px;
 }
@@ -91,4 +91,142 @@
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     font-size: 100px;
     color: black;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-list {
+    display: flex;
+}
+
+.slide-item {
+    cursor: grab;
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 90vw;
+}
+
+.slide-content {
+    border-radius: 10px;
+    box-shadow: #070707 0px 12px 12px;
+    position: relative;
+}
+
+.slide-image {
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.slide-description {
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-description h3 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top: 16px
+}
+
+.slide-description p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+}
+
+.slide-nav-button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    z-index: 1;
+}
+
+.slide-nav-previous {
+    left: 20px;
+}
+
+.slide-nav-next {
+    right: 20px;
+}
+
+.slide-controls {
+    margin: 30px auto 0;
+}
+
+.slide-control-button {
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.slide-control-button.active {
+    color: #F1C445;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-description {
+        padding: 10px;
+    }
+    
+    .slide-description h3 {
+        font-size: 24px;
+        top: 0;
+    }
+
+    .slide-description p {
+        display: none;
+    }
+
+    .slide-nav-button {
+        margin-top: -20px;
+        font-size: 28px;
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    
+    .slide-nav-next {
+        right: 10px;
+    }
+
+    .slide-controls {
+        margin: 15px auto 0;
+    }
+
+    .slide-control-button {
+        font-size: 14px;
+    }
 }

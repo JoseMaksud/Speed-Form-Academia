@@ -44,16 +44,61 @@
                 <div class="SobreNosCarrossel">
                     <div class="carrossel-linha"></div>
                     <a href="#content-2008" class="carrossel-circle" data-year="2008"></a>
-                    <a href="#content-2010" class="carrossel-circle" data-year="2010"></a>
-                    <a href="#content-2015" class="carrossel-circle" data-year="2015"></a>
-                    <a href="#content-2020" class="carrossel-circle" data-year="2020"></a>
+                    <a href="#content-2013" class="carrossel-circle" data-year="2013"></a>
+                    <a href="#content-2021" class="carrossel-circle" data-year="2021"></a>
+                    <a href="#content-2024" class="carrossel-circle" data-year="2024"></a>
                 </div>
     
-                <!-- Carrossel de conteúdo abaixo dos círculos -->
-                <div class="conteudoCarrossel">
-                    <!-- Imagem do carrossel -->
-                    <div class="conteudo-imagem-carrossel"></div>
+                <div class="wrapper">
+                    <div class="slide-wrapper" data-slide="wrapper">
+                        <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+                        <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+                        <div class="slide-list" data-slide="list">
+                            <div class="slide-item" data-slide="item" data-index="0">
+                                <div class="slide-content">
+                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/1.png"/>
+                                    <div class="slide-description">
+                                        <h3>2008</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item" data-slide="item" data-index="1">
+                                <div class="slide-content">
+                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/1.png" />
+                                    <div class="slide-description">
+                                        <h3>2013</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item" data-slide="item" data-index="2">
+                                <div class="slide-content">
+                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/1.png" />
+                                    <div class="slide-description">
+                                        <h3>2021</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item" data-slide="item" data-index="3">
+                                <div class="slide-content">
+                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/1.png" />
+                                    <div class="slide-description">
+                                        <h3>2024</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-controls" data-slide="controls-wrapper">
+                        </div>
+                    </div>
                 </div>
+                <script src="assets/js/slider.js"></script>
+                <script>
+                    initSlider({
+                        autoPlay: true,
+                        startAtIndex: 0,
+                        timeInterval: 2000
+                    })
+                </script>
     
                 <!-- Conteúdo correspondente a cada ano -->
                 <div id="content-2008" class="content-section">
@@ -64,27 +109,27 @@
                     </div>
                 </div>
     
-                <div id="content-2010" class="content-section">
+                <div id="content-2013" class="content-section">
                     <div class="conteudo-imagem"></div>
                     <div class="conteudo-texto">
-                        <h2>2010</h2>
-                        <p>Conteúdo para o ano de 2010...</p>
+                        <h2>2013</h2>
+                        <p>Conteúdo para o ano de 2013...</p>
                     </div>
                 </div>
     
-                <div id="content-2015" class="content-section">
+                <div id="content-2021" class="content-section">
                     <div class="conteudo-imagem"></div>
                     <div class="conteudo-texto">
-                        <h2>2015</h2>
-                        <p>Conteúdo para o ano de 2015...</p>
+                        <h2>2021</h2>
+                        <p>Conteúdo para o ano de 2021...</p>
                     </div>
                 </div>
     
-                <div id="content-2020" class="content-section">
+                <div id="content-2024" class="content-section">
                     <div class="conteudo-imagem"></div>
                     <div class="conteudo-texto">
-                        <h2>2020</h2>
-                        <p>Conteúdo para o ano de 2020...</p>
+                        <h2>2024</h2>
+                        <p>Conteúdo para o ano de 2024...</p>
                     </div>
                 </div>
             </div>
