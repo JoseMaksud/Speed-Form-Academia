@@ -171,6 +171,10 @@ html, body {
     z-index: 1;
 }
 
+.slide-nav-button:hover {
+    background: none;
+}
+
 .slide-nav-previous {
     left: 20px;
 }
