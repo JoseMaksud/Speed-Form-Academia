@@ -39,7 +39,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .detalhesAcademiasFotos img:nth-child(1) {
@@ -49,22 +49,22 @@
 
 .detalhesAcademiasFotos img:nth-child(2) {
     grid-area: foto2;
-    height: 200px;
+    height: 230px;
 }
 
 .detalhesAcademiasFotos img:nth-child(3) {
     grid-area: foto3;
-    height: 200px;
+    height: 230px;
 }
 
 .detalhesAcademiasFotos img:nth-child(4) {
     grid-area: foto4;
-    height: 200px;
+    height: 225px;
 }
 
 .detalhesAcademiasFotos img:nth-child(5) {
     grid-area: mapa;
-    height: 200px;
+    height: 225px;
 }
 
 @media (max-width: 768px) {
