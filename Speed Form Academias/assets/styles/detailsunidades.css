@@ -13,8 +13,15 @@
 .titleDetalhesAcademias {
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;
+    color: black;
+    font-size: 40px;
 }
+
+.titleDetalhesAcademias h1 {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
+}
+
 
 .detalhesAcademiasFotos {
     display: grid;
@@ -22,8 +29,9 @@
     grid-template-rows: auto;
     grid-gap: 10px;
     grid-template-areas: 
-        "foto1 foto2 foto3"
-        "foto1 foto4 mapa";
+        "foto1 foto1 foto2"
+        "foto1 foto1 foto3" 
+        "mapa  mapa  foto4";
     margin: 0 auto;
 }
 
@@ -36,7 +44,7 @@
 
 .detalhesAcademiasFotos img:nth-child(1) {
     grid-area: foto1;
-    height: 400px;
+    height: 500px;
 }
 
 .detalhesAcademiasFotos img:nth-child(2) {
