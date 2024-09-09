@@ -25,7 +25,13 @@
 									@Html.DisplayNameFor(model => model.Nome)
 								</th>
 								<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
-									@Html.DisplayNameFor(model => model.Descricao)
+									@Html.DisplayNameFor(model => model.DescricaoPT1)
+								</th>
+								<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
+									@Html.DisplayNameFor(model => model.DescricaoPT2)
+								</th>
+								<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
+									@Html.DisplayNameFor(model => model.DescricaoPT3)
 								</th>
 								<th
 									class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
@@ -40,7 +46,13 @@
 										@Html.DisplayFor(modelItem => item.Nome)
 									</td>
 									<td class="text-dark text-sm">
-										@Html.DisplayFor(modelItem => item.Descricao)
+										@Html.DisplayFor(modelItem => item.DescricaoPT1)
+									</td>
+									<td class="text-dark text-sm">
+										@Html.DisplayFor(modelItem => item.DescricaoPT2)
+									</td>
+									<td class="text-dark text-sm">
+										@Html.DisplayFor(modelItem => item.DescricaoPT3)
 									</td>
 									<td class="align-middle text-center">
 										<a asp-action="Edit" asp-route-id="@item.Id" title="Alterar">

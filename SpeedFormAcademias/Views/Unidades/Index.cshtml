@@ -25,6 +25,9 @@
                                     Nome
                                 </th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
+                                    Descricao
+                                </th>
+                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
                                     Localizacão
                                 </th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-start">
@@ -41,6 +44,9 @@
                                 <tr>
                                     <td class="text-dark text-sm">
                                         @Html.DisplayFor(modelItem => item.Nome)
+                                    </td>
+                                    <td class="text-dark text-sm">
+                                        @Html.DisplayFor(modelItem => item.Descricao)
                                     </td>
                                     <td class="text-dark text-sm">
                                         @Html.DisplayFor(modelItem => item.Localizacao)

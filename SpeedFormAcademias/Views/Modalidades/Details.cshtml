@@ -21,16 +21,33 @@
                             <input asp-for="Nome" class="form-control" readonly/>
                         </div>
                         <div class="input-group input-group-outline mb-4">
-                            <label asp-for="Descricao" class="form-label"></label>
-                            <input asp-for="Descricao" class="form-control" readonly/>
+                            <label asp-for="DescricaoPT1" class="form-label"></label>
+                            <input asp-for="DescricaoPT1" class="form-control" readonly/>
+                        </div>
+                        </div>
+                        <div class="input-group input-group-outline mb-4">
+                            <label asp-for="DescricaoPT2" class="form-label"></label>
+                            <input asp-for="DescricaoPT2" class="form-control" readonly/>
+                        </div>
+                        </div>
+                        <div class="input-group input-group-outline mb-4">
+                            <label asp-for="DescricaoPT3" class="form-label"></label>
+                            <input asp-for="DescricaoPT3" class="form-control" readonly/>
                         </div>
                         <div class="input-group input-group-outline mb-4 is-focused">
                             <label asp-for="Imagem" class="form-label"></label>
                             <input asp-for="Imagem" class="form-control" readonly>
                         </div>
+                        <div class="input-group input-group-outline mb-4 is-focused">
+                            <label asp-for="Imagem2" class="form-label"></label>
+                            <input asp-for="Imagem2" class="form-control" readonly>
+                        </div>
                     </div>
                     <div class="col-lg-3">
                         <img src='@(Model.Imagem ?? Url.Content("~/img/sem-foto.jfif"))' class="w-100" alt="Foto">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src='@(Model.Imagem2 ?? Url.Content("~/img/sem-foto.jfif"))' class="w-100" alt="Foto">
                     </div>
                     <div class="mb-3">
                         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">Alterar</a>
