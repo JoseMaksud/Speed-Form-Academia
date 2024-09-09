@@ -15,6 +15,7 @@
 @import url('./sobrenos.css');
 @import url('./carroselsobre.css');
 @import url('./detailsunidades.css');
+@import url('./unidades.css');
 
 * {
   border: 0;
