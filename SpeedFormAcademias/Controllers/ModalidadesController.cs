@@ -54,7 +54,7 @@ namespace SpeedFormAcademias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Imagem")] Modalidade modalidade)
+        public async Task<IActionResult> Create([Bind("Id,Nome,DescricaoPT1,DescricaoPT2,DescricaoPT3,Imagem,Imagem2")] Modalidade modalidade)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace SpeedFormAcademias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao,Imagem")] Modalidade modalidade)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DescricaoPT1,DescricaoPT2,DescricaoPT3,Imagem,Imagem2")] Modalidade modalidade)
         {
             if (id != modalidade.Id)
             {
