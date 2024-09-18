@@ -60,8 +60,8 @@ header {
 .buttonHeader {
   width: 197px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
+  background-color: black;
+  border-radius: 5px;
   padding: 3px;
   display: flex;
   justify-content: flex-start;
@@ -73,9 +73,9 @@ header {
 .menuSelecionar {
   width: 70px;
   height: 37px;
-  border-radius: 50px;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ header {
 
 .buttonHeader a i {
   font-size: 16px;
-  margin-left: 40px;
+  margin-left: 20px;
   text-align: center;
 }
 
