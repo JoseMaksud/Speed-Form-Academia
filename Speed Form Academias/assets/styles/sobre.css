@@ -43,6 +43,10 @@ button:hover {
     background-color: #f1c345c5;
 }
 
+.sobreNosTexto a {
+    color: white;
+}
+
 @media (max-width: 1200px) {
     .sobreNos {
         height: 800px; 
