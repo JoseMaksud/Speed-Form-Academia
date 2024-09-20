@@ -62,7 +62,7 @@
 .card {
     min-width: 70px;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 5px;
     overflow: hidden;
 
     display: flex;
@@ -178,6 +178,11 @@
     .TextoNossaLoja h3 {
         font-size: 24px;
         margin-bottom: 15px; 
+        margin-left: 15px;
+    }
+
+    .TextoNossaLoja p {
+        margin-left: 15px;
     }
 
     .lojaSimbolo {

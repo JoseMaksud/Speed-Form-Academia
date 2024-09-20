@@ -49,7 +49,7 @@
 .buttonsAcademias {
     width: 400px;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: black;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -68,9 +68,10 @@
     font-weight: bold;
 }
 
-.buttonsAcademias .btn-selecionado {
-    background-color: rgba(255, 255, 255, 0.4);
+.botao-selecionado {
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
+
 
 .buttonsAcademias .btn {
     background-color: transparent;
@@ -113,7 +114,12 @@
     margin: auto;
 }
 
-.academiasMain button {
+.academiasMainButton a:hover {
+    background-color: #d6ac38;
+}
+
+.academiasMain a {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +146,42 @@
     justify-content: flex-end;
     margin-top: 20px;
 }
+
+
+/* Adicione uma transição suave para a mudança de botão selecionado */
+.buttonsAcademias .btn-selecionado, .buttonsAcademias .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonsAcademias .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.academiasMainContent {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.academiasMainContent.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.academiasMainContent.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-selecionado:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 @media screen and (max-width: 768px) {
     .academias {

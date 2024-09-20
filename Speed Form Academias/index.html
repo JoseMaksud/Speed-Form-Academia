@@ -146,23 +146,20 @@
                     <p><strong>+7 TON</strong><br> de pesos</p>
                     <p><strong>+7 TON</strong><br> de pesos</p>
                     <div class="buttonsAcademias">
-                        <button class="btn-selecionado">Barra Bonita</button>
-                        <button class="btn">Igaraçu do tietê</button>
+                        <button class="btn botao-selecionado" onclick="trocarAcademia('barra')">Barra Bonita</button>
+                        <button class="btn" onclick="trocarAcademia('igaracu')">Igaraçu do Tietê</button>
                     </div>
                 </div>
                 <div class="academiasMainContent">
                     <div class="academiasMain">
-                        <h3>@Academias.nome</h3>
-                        <p> andit massa enim nec dui nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc non blandit massa enim
-                            nec dui nunc.Lorem ipsum d
-                        </p>
+                        <h3 id="academiaTitulo">Academia Barra Bonita - SP</h3>
+                        <p id="academiaEndereco">Avenida Industrial - Av. Dr. José Erineu Ortigosa, 1178 - Distrito Industrial I, Barra Bonita - SP, 17340-000.</p>
                         <div class="academiasMainButton">
-                            <button>Veja mais</button>
+                            <a href="Unidades.html">Veja mais</a>
                         </div>
                     </div>
                     <div class="academiasImagem">
-                        <img src="./assets/img/imagemAcademia1.png">
+                        <img id="academiaImagem" src="./assets/img/imagemAcademia1.png">
                         <p>Imagem da academia</p>
                     </div>
                 </div>
@@ -172,6 +169,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="sessaoMensalidades">
             <div class="titleMensalidade">
@@ -290,3 +288,43 @@
 </body>
 
 </html>
+
+<script>
+    function trocarAcademia(academia) {
+    const titulo = document.getElementById('academiaTitulo');
+    const endereco = document.getElementById('academiaEndereco');
+    const imagem = document.getElementById('academiaImagem');
+
+    // Atualizando o conteúdo com base na academia selecionada
+    if (academia === 'barra') {
+        titulo.innerText = "Academia Barra Bonita - SP";
+        endereco.innerText = "Avenida Industrial - Av. Dr. José Erineu Ortigosa, 1178 - Distrito Industrial I, Barra Bonita - SP, 17340-000.";
+        imagem.src = "./assets/img/imagemAcademia1.png";
+    } else if (academia === 'igaracu') {
+        titulo.innerText = "Academia Igaraçu do Tietê - SP";
+        endereco.innerText = "R. Sebastiana de Barros, 45 - Centro, Igaraçu do Tietê - SP, 17350-000";
+        imagem.src = "./assets/img/imagemAcademia2.png";
+    }
+
+    // Alterar o estilo dos botões
+    const botoes = document.querySelectorAll('.buttonsAcademias .btn');
+    
+    botoes.forEach(function(button) {
+        // Removemos a classe 'btn-selecionado' de todos os botões
+        button.classList.remove('btn-selecionado');
+    });
+
+    // Adiciona a classe 'btn-selecionado' no botão correto
+    if (academia === 'barra') {
+        botoes[0].classList.add('botao-selecionado');
+        botoes[0].classList.add('botao-selecionado');
+        botoes[1].classList.remove('botao-selecionado');
+    } else if (academia === 'igaracu') {
+        botoes[0].classList.remove('botao-selecionado');
+        botoes[1].classList.add('botao-selecionado');
+    }
+}
+
+
+
+</script>
