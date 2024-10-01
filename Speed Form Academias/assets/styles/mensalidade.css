@@ -45,7 +45,7 @@
     width: 235px;
     height: 490px;
     border: 5px solid white;
-    border-radius: 900px;
+    border-radius: 100px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@
     width: 235px;
     height: 490px;
     border: 5px solid white;
-    border-radius: 900px;
+    border-radius: 100px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@
     width: 235px;
     height: 490px;
     border: 5px solid white;
-    border-radius: 900px;
+    border-radius: 100px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@
         width: 250;
         height: 450px;
         margin: 20px 0;
-        border-radius: 900px;
+        border-radius: 100px;
     }
 
     .precoMensalContainer strong,
@@ -189,7 +189,7 @@
         width: 250px;
         height: 450px;
         margin: 10px 0;
-        border-radius: 900px;
+        border-radius: 100px;
     }
 
     .precoMensalContainer strong,
