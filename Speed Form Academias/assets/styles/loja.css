@@ -11,7 +11,7 @@
 }
 
 .nossaLojaTexto {
-    width: 600px;
+    width: 650px;
     height: 200px;
     margin-left: 200px;
     margin-top: 100px;
@@ -46,7 +46,7 @@
 
 .containerCarrousel {
     width: 100%;
-    width: 820px;
+    width: 1200px;
     height: 450px;
     display: flex;
     gap: 10px;
@@ -79,7 +79,7 @@
         flex-grow: 100;
       } */
 .card:hover {
-    flex-grow: 7;
+    flex-grow: 3.5;
 }
 
 .card>.background {
