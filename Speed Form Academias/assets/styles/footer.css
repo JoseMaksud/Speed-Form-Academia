@@ -131,6 +131,10 @@ ul {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media(max-width: 574px) {
@@ -141,6 +145,7 @@ ul {
         width: 50%;
         margin-bottom: 20px;
     }
+
 }
 
 .parcerias {

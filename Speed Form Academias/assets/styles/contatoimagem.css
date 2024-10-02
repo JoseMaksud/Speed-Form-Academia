@@ -38,3 +38,36 @@
 button:hover {
     background-color: #f1c345c5;
 }
+
+@media (max-width: 768px) {
+    .sessaoContato {
+        height: 400px;
+    }
+
+    .contatoImagem img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .contatoTexto {
+        font-size: 30px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .contatoBotao button {
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sessaoContato {
+        height: 300px;
+    }
+
+    .contatoImagem img {
+        width: 100%;
+        height: 300px;
+    }
+}
