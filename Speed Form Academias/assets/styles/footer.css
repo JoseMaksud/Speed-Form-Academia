@@ -142,3 +142,32 @@ ul {
         margin-bottom: 20px;
     }
 }
+
+.parcerias {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.parceriasimg {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide 10s linear infinite;
+}
+
+.parceriasimg img {
+    width: 100px;
+    margin: 0 25px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

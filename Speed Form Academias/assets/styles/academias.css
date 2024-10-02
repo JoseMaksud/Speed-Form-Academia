@@ -254,3 +254,9 @@
         width: 90px; 
     }
 }
+
+@media screen and (max-width: 400px) {
+    .academiasImagem img {
+        width: 280px;
+    }
+}
