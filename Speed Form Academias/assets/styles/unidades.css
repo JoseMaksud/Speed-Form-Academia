@@ -16,6 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .unidadesFotos {
@@ -28,13 +30,65 @@
 }
 
 .titleUnidades {
-    padding: 105px;
     padding-bottom: 5px;
     font-size: 40px;
     color: black;
+    text-align: left; 
 }
 
 .titleUnidades h1 {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.unidadesTitle {
+    max-width: 1225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1225px) {
+    .unidades {
+        width: 100%;
+    }
+
+    .unidadesFotos {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleUnidades {
+        font-size: 32px;
+        padding: 80px 20px;
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .titleUnidades {
+        font-size: 28px;
+        padding: 60px 15px;
+        text-align: center;
+    }
+
+    .sessaoUnidades {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .unidades {
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .unidadesFotos img {
+        width: 280px;
+    }
+    .titleUnidades {
+        font-size: 20px;
+    }
 }

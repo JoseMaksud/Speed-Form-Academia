@@ -20,6 +20,7 @@
 .titleDetalhesAcademias h1 {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
+    margin-block: 100px;
 }
 
 
@@ -76,5 +77,11 @@
             "foto3"
             "foto4"
             "mapa";
+    }
+}
+
+@media (max-width: 400px) {
+    .titleDetalhesAcademias {
+        font-size: 28px;
     }
 }

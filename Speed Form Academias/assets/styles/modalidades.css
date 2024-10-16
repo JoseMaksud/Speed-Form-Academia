@@ -32,8 +32,6 @@
 }
 
 .titleModalidades {
-    padding: 105px;
-    padding-bottom: 5px;
     font-size: 40px;
     color: black;
 }
@@ -41,6 +39,7 @@
 .titleModalidades h1 {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    margin-block: 60px;
 }
 
 @media (max-width: 1024px) {
@@ -98,5 +97,15 @@
     .titleModalidades {
         font-size: 24px;
         padding: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modalidadesFotos img{
+        width: 280px;
+    }
+
+    .titleModalidades {
+        font-size: 20px;
     }
 }
