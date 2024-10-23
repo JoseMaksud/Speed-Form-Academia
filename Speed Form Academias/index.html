@@ -9,6 +9,7 @@
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/loja.js" defer></script>
     <script src="./assets/js/dropdown.js" defer></script>
+    <script src="./assets/js/animation.js" defer></script>
     <link rel="icon" href="assets/img/avatar.png">
 </head>
 
@@ -52,8 +53,8 @@
 
     <main>
         <div class="sobreNos">
-            <img src="./assets/img/sobrenosQuadro.png">
-            <div class="sobreNosTexto">
+            <img src="./assets/img/sobrenosQuadro.png" class="hidden">
+            <div class="sobreNosTexto hidden">
                 <h3>Sobre Nós</h3>
                 <p>Bem-vindo à Speed Form Academia, o melhor centro de
                     treinamento da região! Aqui, nossa filosofia é simples:
@@ -71,7 +72,7 @@
 
 
         <div class="nossaLoja">
-            <div class="nossaLojaTexto">
+            <div class="nossaLojaTexto hidden">
                 <div class="lojaSimbolo">
                     <img src="./assets/img/simboloLoja.png">
                 </div>
@@ -83,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="lojaCarrosel">
+            <div class="lojaCarrosel hidden">
                 <div class="containerCarrousel">
                     <div class="card">
                         <img class="background" src="./assets/img/itemLoja.png">
@@ -151,7 +152,7 @@
 
 
         <div class="sessaoAcademias">
-            <div class="academias">
+            <div class="academias hidden">
                 <div class="academiasHeader">
                     <img src="./assets/img/iconAcademias.png">
                     <p><strong>+7 TON</strong><br> de pesos</p>
@@ -191,10 +192,10 @@
 
 
         <div class="sessaoMensalidades">
-            <div class="titleMensalidade">
+            <div class="titleMensalidade hidden">
                 <h1>PREÇOS</h1>
             </div>
-            <div class="mensalidade">
+            <div class="mensalidade hidden">
                 <div class="precos">
                     <div class="precoMensalContainer">
                         <div class="precoMensal">
@@ -230,7 +231,7 @@
             </div>
         </div>
 
-        <div class="sessaoContato">
+        <div class="sessaoContato hidden">
             <div class="contatoImagem">
                 <img src="./assets/img/contatoImagem.png">
             </div>
@@ -244,7 +245,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
         <div id="Whatsapp">
             <link rel="stylesheet"
                 href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">

@@ -59,3 +59,15 @@ img{
   border: 1px solid #474747;
   border-radius: 40px;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-25%);
+  transition: all 1s ease-in-out;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
