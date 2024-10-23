@@ -253,6 +253,13 @@
     .academiasFooter img {
         width: 90px; 
     }
+
+
+    /* +7 Toneladas 2 e 3 sumir */
+    .academiasHeader p:nth-child(2),
+    .academiasHeader p:nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
