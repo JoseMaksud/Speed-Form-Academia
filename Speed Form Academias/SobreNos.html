@@ -40,110 +40,69 @@
     <main>
         <div class="sessaoSobreNosPagina">
             <div class="SobreNosPagina">
-                <!-- Círculos de datas -->
-                <div class="SobreNosCarrossel">
-                    <div class="carrossel-linha"></div>
-                    <a href="#content-2008" class="carrossel-circle" data-year="2008"></a>
-                    <a href="#content-2013" class="carrossel-circle" data-year="2013"></a>
-                    <a href="#content-2021" class="carrossel-circle" data-year="2021"></a>
-                    <a href="#content-2024" class="carrossel-circle" data-year="2024"></a>
-                </div>
-    
-                <div class="wrapper">
-                    <div class="slide-wrapper" data-slide="wrapper">
-                        <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
-                        <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
-                        <div class="slide-list" data-slide="list">
-                            <div class="slide-item" data-slide="item" data-index="0">
-                                <div class="slide-content">
-                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/1-c.png"/>
-                                    <div class="slide-description">
-                                        <h3>2008</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide-item" data-slide="item" data-index="1">
-                                <div class="slide-content">
-                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/2-c.png" />
-                                    <div class="slide-description">
-                                        <h3>2013</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide-item" data-slide="item" data-index="2">
-                                <div class="slide-content">
-                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/3-c.png" />
-                                    <div class="slide-description">
-                                        <h3>2021</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide-item" data-slide="item" data-index="3">
-                                <div class="slide-content">
-                                    <img class="slide-image" src="assets/img/sobrenoscarrosel/4-c.png" />
-                                    <div class="slide-description">
-                                        <h3>2024</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-controls" data-slide="controls-wrapper">
-                        </div>
-                    </div>
-                </div>
-                <script src="assets/js/slider.js"></script>
-                <script>
-                    initSlider({
-                        autoPlay: true,
-                        startAtIndex: 0,
-                        timeInterval: 2000
-                    })
-                </script>
-    
-                <!-- Conteúdo correspondente a cada ano -->
-                <div id="content-2008" class="content-section">
-                    <div class="conteudo-texto">
-                        <h2>2008</h2>
-                        <p>Fundada em 2008 a primeira Academia Speed Form, foi a realização de um sonho de um estudante de 25 anos de educação fisica e apaixonado pela modalidade musculção. O jovem empreendedor José Eduardo Volpato, inspirado em academias que frequentava arriscou suas economias e comprou poucos aparelhos para dar o start em seu sonho.</p>
-                    </div>
-                    <div class="conteudo-imagem">
-                        <img src="assets/img/sobrenoscarrosel/1.png">
-                    </div>
-                </div>
-    
-                <div id="content-2013" class="content-section">
-                    <div class="conteudo-texto">
-                        <h2>2013</h2>
-                        <p>Aos poucos com o vasto conhecimento em musculação e seu instinto empreendedor, construiu seu primeiro predio proprio em IGARAÇU DO TIETÊ e fundou a primeira SPEEDFORM, hoje a academia ocupa mais 800m na cidade. Em 2013 empreendeu na segunda unidade, em BARRA BONITA, em seu predio de dois pavimentos e super completa. </p>
-                    </div>
-                    <div class="conteudo-imagem">
-                        <img src="assets/img/sobrenoscarrosel/2.png">
-                    </div>
-                </div>
-    
-                <div id="content-2021" class="content-section">
-                    <div class="conteudo-texto">
-                        <h2>2021</h2>
-                        <p> Com todo sucesso que a marca SPEEDFORM foi conquistando, em 2021 a unidade de BARRA BONITA acabou crescendo e chegou a ser uma das maiores academias de musculação do estado de São Paulo com mais de 1600m.</p>
-                    </div>
-                    <div class="conteudo-imagem">
-                        <img src="assets/img/sobrenoscarrosel/3.png">
-                    </div>
-                </div>
-    
-                <div id="content-2024" class="content-section">
-                    <div class="conteudo-texto">
-                        <h2>2024</h2>
-                        <p>    A academia SPEEDFORM está em plena ascensão, consolidando-se como um dos principais centros fitness da região. Com uma infraestrutura moderna, equipamentos de última geração e parcerias como a POWERFIT, a SPEEDFORM oferece um ambiente motivador para todos os níveis de praticantes.
+          
+              <!-- Carrossel de Anos -->
+              <div class="SobreNosCarrossel">
+                <div class="carrossel-circle selecionado" data-year="2008" onclick="showContent('content-2008')"></div>
+                <div class="carrossel-circle" data-year="2013" onclick="showContent('content-2013')"></div>
+                <div class="carrossel-circle" data-year="2021" onclick="showContent('content-2021')"></div>
+                <div class="carrossel-circle" data-year="2024" onclick="showContent('content-2024')"></div>
+                <div class="carrossel-linha"></div>
+              </div>
 
-                        </p>
-                    </div>
-                    <div class="conteudo-imagem">
-                        <img src="assets/img/sobrenoscarrosel/4.png">
-                    </div>
+              <!-- <div class="imagensAnos">
+                <img class="selecionadoimg" src="assets/img/sobrenoscarrosel/1-c.png" data-year="2008">
+                <img src="assets/img/sobrenoscarrosel/2-c.png" data-year="2013">
+                <img src="assets/img/sobrenoscarrosel/3-c.png" data-year="2021">
+                <img src="assets/img/sobrenoscarrosel/4-c.png" data-year="2024">
+              </div> -->
+          
+               <!-- Conteúdo correspondente a cada ano -->
+               <div id="content-2008" class="content-section">
+                <div class="conteudo-texto">
+                    <h2>2008</h2>
+                    <p>Fundada em 2008 a primeira Academia Speed Form, foi a realização de um sonho de um estudante de 25 anos de educação fisica e apaixonado pela modalidade musculção. O jovem empreendedor José Eduardo Volpato, inspirado em academias que frequentava arriscou suas economias e comprou poucos aparelhos para dar o start em seu sonho.</p>
+                </div>
+                <div class="conteudo-imagem">
+                    <img src="assets/img/sobrenoscarrosel/1.png">
                 </div>
             </div>
-        </div>
+
+            <div id="content-2013" class="content-section">
+                <div class="conteudo-texto">
+                    <h2>2013</h2>
+                    <p>Aos poucos com o vasto conhecimento em musculação e seu instinto empreendedor, construiu seu primeiro predio proprio em IGARAÇU DO TIETÊ e fundou a primeira SPEEDFORM, hoje a academia ocupa mais 800m na cidade. Em 2013 empreendeu na segunda unidade, em BARRA BONITA, em seu predio de dois pavimentos e super completa. </p>
+                </div>
+                <div class="conteudo-imagem">
+                    <img src="assets/img/sobrenoscarrosel/2.png">
+                </div>
+            </div>
+
+            <div id="content-2021" class="content-section">
+                <div class="conteudo-texto">
+                    <h2>2021</h2>
+                    <p> Com todo sucesso que a marca SPEEDFORM foi conquistando, em 2021 a unidade de BARRA BONITA acabou crescendo e chegou a ser uma das maiores academias de musculação do estado de São Paulo com mais de 1600m.</p>
+                </div>
+                <div class="conteudo-imagem">
+                    <img src="assets/img/sobrenoscarrosel/3.png">
+                </div>
+            </div>
+
+            <div id="content-2024" class="content-section">
+                <div class="conteudo-texto">
+                    <h2>2024</h2>
+                    <p>    A academia SPEEDFORM está em plena ascensão, consolidando-se como um dos principais centros fitness da região. Com uma infraestrutura moderna, equipamentos de última geração e parcerias como a POWERFIT, a SPEEDFORM oferece um ambiente motivador para todos os níveis de praticantes.
+
+                    </p>
+                </div>
+                <div class="conteudo-imagem">
+                    <img src="assets/img/sobrenoscarrosel/4.png">
+                </div>
+            </div>
+              
+            </div>
+          </div>
+          
         
     </main>
     
