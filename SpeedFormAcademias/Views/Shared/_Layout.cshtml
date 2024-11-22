@@ -1,70 +1,145 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SpeedFormAcademias</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/slicknav.css"/>
-    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/SpeedFormAcademias.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Form Academias</title>
+    <link rel="stylesheet" href="~/styles/global.css">
+    <script src="~/js/header.js" defer></script>
+    <script src="~/js/loja.js" defer></script>
+    <script src="~/js/dropdown.js" defer></script>
+    <script src="~/js/animation.js" defer></script>
+    <script src="~/js/sobrenos.js" defer></script>
+    <link rel="icon" href="~/img/avatar.png">
 </head>
+
 <body>
-   <header class="header-area header-transparent">
-    <div class="main-header header-sticky">
-      <div class="container-fluid">
-          <div class="main-menu f-right d-none d-lg-block">
-            <nav>
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-between align-items-center p-3 text-uppercase mb-md-0">
-              <div class="icon">
-                  <a href="/"><img src="~/img/perfilicon.png" alt=""></a>
-              </div>   
-              <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Academias</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Atividades</a></li>
-              <div class="menu-wrapper d-flex align-items-center justify-content-between">
-                <div class="logo">
-                  <a href="/"><img src="~/img/logo.png" alt=""></a>
-                </div>
-              </div>
-              <li><a href="#" class="nav-link px-2 text-white">Nossa Loja</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Horários</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
-              <div class="iconsociais d-flex flex-column">
-                  <a href="https://www.facebook.com/speedformacademiaoficial" target="_blank"><img src="~/img/facebookicon.png" alt=""></a>
-                  <a href="https://linkme.bio/speedformacademia" target="_blank"><img src="~/img/whatsappicon.png" alt=""></a>
-                  <a href="https://www.instagram.com/speedformacademia/" target="_blank"><img src="~/img/instagramicon.png" alt=""></a>
-              </div> 
-              </ul>
-            </nav>
-        
-        
-        </div>
-      </div>
+    <div class="imagemInicio">
+        <img src="~/img/bannerinicial.png">
     </div>
-  </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+   <header>
+        <nav>
+            <ul class="navbar">
+                <div class="navbarGrupo">
+                    <div class="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="buttonHeader">
+                        <li class="menuSelecionar"><a asp-action="Index" asp-controller="Home">INICIO</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">MENU<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="submenu">
+                                    <li><a asp-action="Unidades" asp-controller="Home">ACADEMIAS</a></li>
+                                    <li><a asp-action="Modalidades" asp-controller="Home">MODALIDADES</a></li>
+                                    <li><a asp-action="SobreNos" asp-controller="Home">SOBRE NÓS</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li class="contato"><a asp-action="Contato" asp-controller="Home">CONTATO</a></li>
+                </div>
+    
+                <div class="navbarGrupo logo">
+                    <li><a asp-action="Index" asp-controller="Home"><img src="~/img/speedformLogo.png" alt="Logo"></a></li>
+                </div>
+    
+                <div class="navbarGrupo social">
+                    <li><a target="_blank" href="https://www.instagram.com/speedformacademia/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://linkme.bio/speedformacademia"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/speedformacademiaoficial/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+        <main>
             @RenderBody()
         </main>
     </div>
 
-  <div id="Whatsapp">
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-    <a id="robbu-whatsapp-button" target="_blank" href="https://linkme.bio/speedformacademia">
-    <div class="rwb-tooltip bg-white">Fale Conosco</div>
-    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-    </a>
-  </div>
+ <footer class="footer">
+        <div id="Whatsapp">
+            <link rel="stylesheet"
+                href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+            <a id="robbu-whatsapp-button" target="_blank" style="z-index: 10000;" href="https://linkme.bio/speedformacademia">
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+            </a>
+        </div>
+        <div class="line"></div>
+        <div class="row">
+            <div class="footer-col-img">
+                <img src="~/img/speedformLogo.png" alt="">
+            </div>
+            <div class="footer-col">
+                <h4>NAVEGUE</h4>
+                <ul>
+                    <li><a asp-action="Index" asp-controller="Home">INICIO</a></li>
+                    <li><a asp-action="SobreNos" asp-controller="Home">SOBRE NÓS</a></li>
+                    <li><a asp-action="Unidades" asp-controller="Home">ACADEMIAS</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">ATIVIDADES</a></li>
+                    <li><a asp-action="Contato" asp-controller="Home">CONTATO</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ATIVIDADES</h4>
+                <ul>
+                    <li><a asp-action="Modalidades" asp-controller="Home">FUNCIONAL</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">SPINNING</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">MUSCULAÇÃO</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">MUAI THAY</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">JIU JITSU</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">AERO BOXE</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">ZUMBA</a></li>
+                    <li><a asp-action="Modalidades" asp-controller="Home">RITMO</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ENTRE EM CONTATO</h4>
+                <ul>
+                    <li><a asp-action="Contato" asp-controller="Home">CONTATO</a></li>
+                    <br>
+                    <li>SpeedForm@gmail.com</li>
+                    <li><a href="https://linkme.bio/speedformacademia">WHATSAPP</a></li>
+                    <li><a href="https://www.facebook.com/speedformacademiaoficial/">FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com/speedformacademia/">INSTAGRAM</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>REDES SOCIAS</h4>
+                <div class="social-links">
+                    <a target="_blank" href="https://www.instagram.com/speedformacademia/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/speedformacademiaoficial/"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://linkme.bio/speedformacademia"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="line2"></div>
+        <div class="parcerias">
+            <div class="parceriasimg">
+                <img src="~/img/logoBlackSkull.png">
+                <img src="~/img/logoNewMillen.png">
+                <img src="~/img/logoSharkPro.png">
+                <img src="~/img/logoDux.png">
+                <img src="~/img/logoMaxTitanium.png">
+                <img src="~/img/logoIntegralMedica.png">
+                <img src="~/img/logoPowerFit.png">
+                <img src="~/img/logoWellhub.png">
 
-    <footer>
+
+                <img src="~/img/logoBlackSkull.png">
+                <img src="~/img/logoNewMillen.png">
+                <img src="~/img/logoSharkPro.png">
+                <img src="~/img/logoDux.png">
+                <img src="~/img/logoMaxTitanium.png">
+                <img src="~/img/logoIntegralMedica.png">
+                <img src="~/img/logoPowerFit.png">
+                <img src="~/img/logoWellhub.png">
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/jquery.slicknav.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
+

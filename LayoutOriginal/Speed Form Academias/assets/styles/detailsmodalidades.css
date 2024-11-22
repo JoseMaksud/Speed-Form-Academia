@@ -1,0 +1,103 @@
+.sessaoTreino {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.treino {
+    max-width: 1225px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.textoParte1, .textoParte2, .textoParte3 {
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.textoParte1 {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px;
+    flex-wrap: wrap; /* Permite a quebra se necessário */
+}
+
+.textoParte1 img {
+    width: 100%;
+    height: auto;
+    max-width: 510px;
+    max-height: 390px;
+    box-sizing: border-box;
+}
+
+.textoParte1 p {
+    flex: 1;
+    margin: 0;
+    font-size: 16px; /* Ajuste o tamanho do texto conforme necessário */
+    box-sizing: border-box;
+    line-height: 1.5; /* Melhora a legibilidade */
+    overflow-wrap: break-word;
+}
+
+.textoParte3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.textoParte3 img {
+    width: 100%;
+    height: auto;
+    max-width: 1225px;
+    box-sizing: border-box;
+}
+
+.textoParte2 {
+    text-align: left;
+}
+
+.textoParte2 p {
+    margin: 0;
+    font-size: 16px; /* Ajustar o tamanho do texto conforme necessário */
+    box-sizing: border-box;
+    line-height: 1.5; /* Melhora a legibilidade */
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .textoParte1, .textoParte3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textoParte1 img, .textoParte3 img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textoParte1, .textoParte3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textoParte1 img, .textoParte3 img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .textoParte1 p, .textoParte2 p, .textoParte3 p {
+        font-size: 14px;
+    }
+}

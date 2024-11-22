@@ -1,0 +1,26 @@
+@model SpeedFormAcademias.ViewModels.DetailsModalidade
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sessaoTreino">
+    <div class="treino">
+        <h1>@Model.Modalidade.Nome</h1>
+        <!-- Texto Parte 1 com Imagem -->
+        <div class="textoParte1">
+            <img src="~/@Model.Modalidade.Imagem" alt="Imagem do Treino">
+            <p>@Model.Modalidade.DescricaoPT1</p>
+        </div>
+
+        <!-- Texto Parte 2 sem Imagem -->
+        <div class="textoParte2">
+            <p>@Model.Modalidade.DescricaoPT2</p>
+        </div>
+
+        <!-- Texto Parte 3 com Imagem -->
+        <div class="textoParte3">
+            <p>@Model.Modalidade.DescricaoPT3</p>
+            <img src="~/@Model.Modalidade.Imagem2" alt="Imagem Final">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+@import url('./header.css');
+@import url('./sobre.css');
+@import url('./loja.css');
+@import url('./academias.css');
+@import url('./mensalidade.css');
+@import url('./footer.css');
+@import url('./modalidades.css');
+@import url('./dropdown.css');
+@import url('./contatoimagem.css');
+@import url('./detailsmodalidades.css');
+@import url('./sobrenos.css');
+@import url('./carroselsobre.css');
+@import url('./detailsunidades.css');
+@import url('./unidades.css');
+@import url('./contato.css');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: "Mina", sans-serif;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  vertical-align: top;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #000000;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid #474747;
+  border-radius: 40px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-25%);
+  transition: all 1s ease-in-out;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}

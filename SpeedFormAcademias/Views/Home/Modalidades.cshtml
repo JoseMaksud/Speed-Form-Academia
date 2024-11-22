@@ -1,0 +1,20 @@
+﻿@model List<SpeedFormAcademias.Models.Modalidade> 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sessaoModalidades">
+    <div class="titleModalidades">
+        <h1>MODALIDADES</h1>
+        <div class="modalidades">
+            <div class="modalidadesFotos">
+                @foreach (var modalidade in Model) 
+                {
+                   <a href="@Url.Action("DetailsModalidades", "Home", new { id = modalidade.Id })">
+                        <img src="~/@modalidade.Imagem" alt="@modalidade.Nome" />
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

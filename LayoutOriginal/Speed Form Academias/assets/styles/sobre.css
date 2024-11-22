@@ -1,0 +1,131 @@
+.sobreNos {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/sobrenosTexturas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.sobreNosTexto {
+    max-width: 700px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.sobreNosTexto h3 {
+    font-size: 2em;
+    padding-bottom: 50px; 
+    font-family: "Gemunu Libre", sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.sobreNosTexto button {
+    background-color: #F1C445;
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-family: "Gemunu Libre", sans-serif;
+    border-radius: 20px;
+    margin-top: 150px; 
+}
+
+button:hover {
+    background-color: #f1c345c5;
+}
+
+.sobreNosTexto a {
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .sobreNos {
+        height: 800px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sobreNos {
+        flex-direction: column; 
+        justify-content: center; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .sobreNosTexto {
+        padding-left: 0; 
+        padding-top: 20px; 
+        max-width: 90%;
+        margin: 0 auto; 
+    }
+
+    .sobreNos img {
+        width: 450px;
+    }
+
+    .sobreNosTexto h3 {
+        font-size: 1.5em; 
+        padding-bottom: 20px;
+    }
+
+    .sobreNosTexto button {
+        width: 100%;
+        max-width: none; 
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobreNos {
+        height: auto; 
+    }
+
+    .sobreNosTexto h3 {
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    .sobreNosTexto button {
+        width: 100%; 
+    }
+
+    .sobreNos img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sobreNos {
+        height: auto; 
+        padding: 10px 20px; 
+        background-size: cover; 
+        background-position: center center;
+    }
+
+    .sobreNosTexto {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 10px; 
+    }
+
+    .sobreNosTexto h3 {
+        font-size: 1em;
+        padding-bottom: 10px; 
+    }
+
+    .sobreNosTexto button {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 0.9em;
+        height: 30px;
+    }
+}
