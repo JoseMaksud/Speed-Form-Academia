@@ -4,14 +4,14 @@
 }
 
 <div class="sessaoUnidades">
-    <div class="titleUnidades">
+    <div class="titleUnidades hidden">
         <div class="unidadesTitle">
             <h1>UNIDADES</h1>
             <img src="~/img/iconAcademias.png">
         </div>
         <div class="unidades">
             <div class="unidadesFotos">
-@foreach (var unidade in Model)
+                @foreach (var unidade in Model)
                 {
                     <a href="@Url.Action("DetailsUnidades", "Home", new { id = unidade.Id })">
                         <img src="@unidade.Fotos.FirstOrDefault()?.ArquivoFoto" alt="Foto da Unidade">
