@@ -54,16 +54,56 @@ namespace SpeedFormAcademias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,DescricaoPT1,DescricaoPT2,DescricaoPT3,Imagem,Imagem2")] Modalidade modalidade)
+        public async Task<IActionResult> Create(Modalidade modalidade, IFormFile Imagem, IFormFile Imagem2)
         {
             if (ModelState.IsValid)
             {
+                // Diretório para salvar as imagens
+                var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/modalidades");
+
+                // Cria o diretório, se não existir
+                if (!Directory.Exists(imagePath))
+                {
+                    Directory.CreateDirectory(imagePath);
+                }
+
+                // Processa a primeira imagem
+                if (Imagem != null && Imagem.Length > 0)
+                {
+                    var fileName1 = $"{Guid.NewGuid()}_{Imagem.FileName}";
+                    var filePath1 = Path.Combine(imagePath, fileName1);
+
+                    using (var stream = new FileStream(filePath1, FileMode.Create))
+                    {
+                        await Imagem.CopyToAsync(stream);
+                    }
+
+                    modalidade.Imagem = $"img/modalidades/{fileName1}";
+                }
+
+                // Processa a segunda imagem
+                if (Imagem2 != null && Imagem2.Length > 0)
+                {
+                    var fileName2 = $"{Guid.NewGuid()}_{Imagem2.FileName}";
+                    var filePath2 = Path.Combine(imagePath, fileName2);
+
+                    using (var stream = new FileStream(filePath2, FileMode.Create))
+                    {
+                        await Imagem2.CopyToAsync(stream);
+                    }
+
+                    modalidade.Imagem2 = $"img/modalidades/{fileName2}";
+                }
+
+                // Salva a modalidade no banco de dados
                 _context.Add(modalidade);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(modalidade);
         }
+
 
         // GET: Modalidades/Edit/5
         public async Task<IActionResult> Edit(int? id)
