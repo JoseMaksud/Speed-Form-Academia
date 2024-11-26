@@ -1,3 +1,12 @@
+.sessaoPaginaContato {
+    width: 100%;
+    height: auto;
+    background: url(../img/backgroundContato.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
 .contact-bg{
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(image/contact-bg.jpg);
@@ -54,7 +63,6 @@
     padding: 0 1rem;
 }
 .contact-info{
-    margin: 2rem 0;
     text-align: center;
     padding: 2rem 0;
 }
