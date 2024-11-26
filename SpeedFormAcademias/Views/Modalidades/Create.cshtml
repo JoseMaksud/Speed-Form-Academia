@@ -46,12 +46,14 @@
                         </div>                       
                     </div>
                     <div class="col-lg-3 d-flex flex-column mb-3 cursor-pointer">
-                        <img id="Preview" src="~/img/sem-foto.jfif" class="w-100" alt="Foto" onclick="changeImage()">
-                        <input type="file" asp-for="Imagem" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden/>
+                        <!-- Primeira imagem -->
+                        <img id="Preview1" src="~/img/sem-foto.jfif" class="w-100" alt="Foto" onclick="changeImage('Imagem')">
+                        <input type="file" id="Imagem" name="Imagem" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden />
                     </div>
                     <div class="col-lg-3 d-flex flex-column mb-3 cursor-pointer">
-                        <img id="Preview" src="~/img/sem-foto.jfif" class="w-100" alt="Foto" onclick="changeImage()">
-                        <input type="file" asp-for="Imagem2" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden/>
+                        <!-- Segunda imagem -->
+                        <img id="Preview2" src="~/img/sem-foto.jfif" class="w-100" alt="Foto" onclick="changeImage('Imagem2')">
+                        <input type="file" id="Imagem2" name="Imagem2" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden />
                     </div>
                     <div class="mb-3">
                         <input type="submit" value="Salvar" class="btn btn-success me-3" />
@@ -63,27 +65,27 @@
     </div>
 </div>
 
-
 @section Scripts {
     <script>
-        function changeImage() {
-            document.querySelector("input[type='file']").click();
-        }
-
-        window.addEventListener('load', function () {
-            document.querySelector('input[type=file]').addEventListener('change', function () {
+        // Função para mudar a imagem
+        function changeImage(imageId) {
+            // Obtém o input de arquivo correspondente
+            var fileInput = document.getElementById(imageId);
+            fileInput.click();
+            
+            // Quando o arquivo é selecionado, atualiza a imagem
+            fileInput.addEventListener('change', function () {
                 if (this.files && this.files[0]) {
-                    var img = document.getElementById('Preview');
+                    var img = document.getElementById('Preview' + (imageId === 'Imagem' ? '1' : '2'));
                     img.src = URL.createObjectURL(this.files[0]);
                 }
             });
-        });
+        }
     </script>
 }
 
 <style>
-  .bg-gradient-warning {
-    background: #F1C445 !important;  
-  }
-}
+    .bg-gradient-warning {
+        background: #F1C445 !important;
+    }
 </style>

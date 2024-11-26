@@ -18,49 +18,53 @@
                     <div class="col-lg-9 col-md-7">
                         <div class="input-group input-group-outline mb-4">
                             <label asp-for="Nome" class="form-label"></label>
-                            <input asp-for="Nome" class="form-control" readonly/>
+                            <input asp-for="Nome" class="form-control" readonly />
                         </div>
                         <div class="input-group input-group-outline mb-4">
                             <label asp-for="DescricaoPT1" class="form-label"></label>
-                            <input asp-for="DescricaoPT1" class="form-control" readonly/>
-                        </div>
-                        </div>
-                        <div class="input-group input-group-outline mb-4">
-                            <label asp-for="DescricaoPT2" class="form-label"></label>
-                            <input asp-for="DescricaoPT2" class="form-control" readonly/>
-                        </div>
-                        </div>
-                        <div class="input-group input-group-outline mb-4">
-                            <label asp-for="DescricaoPT3" class="form-label"></label>
-                            <input asp-for="DescricaoPT3" class="form-control" readonly/>
-                        </div>
-                        <div class="input-group input-group-outline mb-4 is-focused">
-                            <label asp-for="Imagem" class="form-label"></label>
-                            <input asp-for="Imagem" class="form-control" readonly>
-                        </div>
-                        <div class="input-group input-group-outline mb-4 is-focused">
-                            <label asp-for="Imagem2" class="form-label"></label>
-                            <input asp-for="Imagem2" class="form-control" readonly>
+                            <input asp-for="DescricaoPT1" class="form-control" readonly />
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <img src='~/@(Model.Imagem ?? Url.Content("~/img/sem-foto.jfif"))' class="w-100" alt="Foto">
-                    </div>
-                    <div class="col-lg-3">
-                        <img src='~/@(Model.Imagem2 ?? Url.Content("~/img/sem-foto.jfif"))' class="w-100" alt="Foto">
-                    </div>
-                    <div class="mb-3">
-                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">Alterar</a>
-                        <a asp-action="Index" class="btn btn-info">Voltar</a>
+                    <div class="input-group input-group-outline mb-4">
+                        <label asp-for="DescricaoPT2" class="form-label"></label>
+                        <input asp-for="DescricaoPT2" class="form-control" readonly />
                     </div>
                 </div>
+                <div class="input-group input-group-outline mb-4">
+                    <label asp-for="DescricaoPT3" class="form-label"></label>
+                    <input asp-for="DescricaoPT3" class="form-control" readonly />
+                </div>
+                <div class="input-group input-group-outline mb-4 is-focused">
+                    <label asp-for="Imagem" class="form-label"></label>
+                    <input asp-for="Imagem" class="form-control" readonly>
+                </div>
+                <div class="input-group input-group-outline mb-4 is-focused">
+                    <label asp-for="Imagem2" class="form-label"></label>
+                    <input asp-for="Imagem2" class="form-control" readonly>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 d-flex justify-content-center align-items-center" style="min-height: 200px;">
+                    <img src='~/@(Model.Imagem ?? Url.Content("~/img/sem-foto.jfif"))' class="img-fluid" alt="Foto">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 d-flex justify-content-center align-items-center" style="min-height: 200px;">
+                    <img src='~/@(Model.Imagem2 ?? Url.Content("~/img/sem-foto.jfif"))' class="img-fluid" alt="Foto">
+                </div>
+            </div>
+            <div class="mb-3">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">Alterar</a>
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
             </div>
         </div>
     </div>
 </div>
+</div>
+</div>
 
 <style>
-  .bg-gradient-warning {
-    background: #F1C445 !important;  
-  }
+    .bg-gradient-warning {
+        background: #F1C445 !important;
+    }
 </style>

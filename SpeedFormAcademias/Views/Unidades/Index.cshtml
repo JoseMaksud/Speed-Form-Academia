@@ -42,16 +42,16 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td class="text-dark text-sm">
+                                    <td class="text-dark text-sm limit-text">
                                         @Html.DisplayFor(modelItem => item.Nome)
                                     </td>
-                                    <td class="text-dark text-sm">
+                                    <td class="text-dark text-sm limit-text">
                                         @Html.DisplayFor(modelItem => item.Descricao)
                                     </td>
-                                    <td class="text-dark text-sm">
+                                    <td class="text-dark text-sm limit-text">
                                         @Html.DisplayFor(modelItem => item.Localizacao)
                                     </td>
-                                    <td class="text-dark text-sm text-break">
+                                    <td class="text-dark text-sm text-break limit-text">
                                         @Html.DisplayFor(modelItem => item.LocalizacaoFoto)
                                     </td>
                                     <td>
@@ -79,6 +79,12 @@
   .bg-gradient-warning {
     background: #F1C445 !important;  
   }
+   .limit-text {
+        white-space: nowrap;       
+        overflow: hidden;         
+        text-overflow: ellipsis;  
+        max-width: 150px;         
+    }
 }
 </style>
 

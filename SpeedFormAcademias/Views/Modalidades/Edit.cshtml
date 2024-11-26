@@ -45,18 +45,22 @@
                             </div>
                             <span asp-validation-for="DescricaoPT3" class="text-danger text-sm"></span>
                         </div>
-                       
                     </div>
+
+                    <!-- Imagem 1 -->
                     <div class="col-lg-3 d-flex flex-column mb-3 cursor-pointer">
-                        <img id="Preview" src="~/@(Model.Imagem ?? Url.Content("~/img/sem-foto.jfif"))" class="w-100" alt="Foto" onclick="changeImage()">
+                        <img id="Preview1" src="~/@(Model.Imagem ?? Url.Content("~/img/sem-foto.jfif"))" class="w-100" alt="Foto" onclick="changeImage('NovaFoto1')">
                         <input type="hidden" asp-for="Imagem">
-                        <input type="file" id="NovaFoto" name="NovaFoto" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden />
+                        <input type="file" id="NovaFoto1" name="NovaFoto1" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden onchange="updateImagePreview(this, 'Preview1')" />
                     </div>
+
+                    <!-- Imagem 2 -->
                     <div class="col-lg-3 d-flex flex-column mb-3 cursor-pointer">
-                        <img id="Preview" src="~/@(Model.Imagem2 ?? Url.Content("~/img/sem-foto.jfif"))" class="w-100" alt="Foto" onclick="changeImage()">
+                        <img id="Preview2" src="~/@(Model.Imagem2 ?? Url.Content("~/img/sem-foto.jfif"))" class="w-100" alt="Foto" onclick="changeImage('NovaFoto2')">
                         <input type="hidden" asp-for="Imagem2">
-                        <input type="file" id="NovaFoto" name="NovaFoto" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden />
+                        <input type="file" id="NovaFoto2" name="NovaFoto2" class="form-control" accept=".jpg,.jpeg,.png,.gif,.jfif" hidden onchange="updateImagePreview(this, 'Preview2')" />
                     </div>
+
                     <div class="mb-3">
                         <input type="submit" value="Salvar" class="btn btn-success me-3" />
                         <a asp-action="Index" class="btn btn-danger">Cancelar</a>
@@ -76,19 +80,17 @@
 
 @section Scripts {
     <script>
-        function changeImage() {
-            document.querySelector("input[type='file']").click();
+        // Função para disparar o clique no input de arquivo correspondente ao id da imagem
+        function changeImage(inputId) {
+            document.getElementById(inputId).click();
         }
 
-        window.addEventListener('load', function () {
-            document.querySelector('input[type=file]')
-                .addEventListener('change', function () {
-                    if (this.files && this.files[0]) {
-                        var img = document.getElementById('Preview');
-                        img.src = URL.createObjectURL(this.files[0]);
-                    }
-                });
-        });
-
+        // Função para atualizar o preview da imagem ao selecionar um arquivo
+        function updateImagePreview(input, previewId) {
+            if (input.files && input.files[0]) {
+                var imgElement = document.getElementById(previewId);
+                imgElement.src = URL.createObjectURL(input.files[0]);
+            }
+        }
     </script>
 }

@@ -45,13 +45,13 @@
 									<td class="text-dark text-sm">
 										@Html.DisplayFor(modelItem => item.Nome)
 									</td>
-									<td class="text-dark text-sm">
+									<td class="text-dark text-sm limit-text">
 										@Html.DisplayFor(modelItem => item.DescricaoPT1)
 									</td>
-									<td class="text-dark text-sm">
+									<td class="text-dark text-sm limit-text">
 										@Html.DisplayFor(modelItem => item.DescricaoPT2)
 									</td>
-									<td class="text-dark text-sm">
+									<td class="text-dark text-sm limit-text">
 										@Html.DisplayFor(modelItem => item.DescricaoPT3)
 									</td>
 									<td class="align-middle text-center">
@@ -79,6 +79,12 @@
   .bg-gradient-warning {
     background: #F1C445 !important;  
   }
+  .limit-text {
+        white-space: nowrap;       
+        overflow: hidden;         
+        text-overflow: ellipsis;  
+        max-width: 150px;         
+    }
 }
 </style>
 
