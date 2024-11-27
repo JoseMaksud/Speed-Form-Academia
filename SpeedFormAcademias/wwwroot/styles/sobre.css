@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/sobrenosTexturas.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/sobrenosTexturas.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/academiasTexturas.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/academiasTexturas.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

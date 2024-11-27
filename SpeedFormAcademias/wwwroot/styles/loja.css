@@ -1,7 +1,7 @@
 .nossaLoja {
     width: 100%;
     height: 900px;
-    background: url(../img/backgroundLoja.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/backgroundLoja.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
