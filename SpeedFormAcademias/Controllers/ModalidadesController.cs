@@ -126,7 +126,7 @@ namespace SpeedFormAcademias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DescricaoPT1,DescricaoPT2,DescricaoPT3,Imagem,Imagem2")] Modalidade modalidade)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DescricaoPT1,DescricaoPT2,DescricaoPT3")] Modalidade modalidade, IFormFile NovaFoto1, IFormFile NovaFoto2)
         {
             if (id != modalidade.Id)
             {
@@ -137,6 +137,39 @@ namespace SpeedFormAcademias.Controllers
             {
                 try
                 {
+                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/modalidades");
+
+                    if (!Directory.Exists(imagePath))
+                    {
+                        Directory.CreateDirectory(imagePath);
+                    }
+
+                    if (NovaFoto1 != null && NovaFoto1.Length > 0)
+                    {
+                        var fileName1 = $"{Guid.NewGuid()}_{NovaFoto1.FileName}";
+                        var filePath1 = Path.Combine(imagePath, fileName1);
+
+                        using (var stream = new FileStream(filePath1, FileMode.Create))
+                        {
+                            await NovaFoto1.CopyToAsync(stream);
+                        }
+
+                        modalidade.Imagem = $"img/modalidades/{fileName1}";
+                    }
+
+                    if (NovaFoto2 != null && NovaFoto2.Length > 0)
+                    {
+                        var fileName2 = $"{Guid.NewGuid()}_{NovaFoto2.FileName}";
+                        var filePath2 = Path.Combine(imagePath, fileName2);
+
+                        using (var stream = new FileStream(filePath2, FileMode.Create))
+                        {
+                            await NovaFoto2.CopyToAsync(stream);
+                        }
+
+                        modalidade.Imagem2 = $"img/modalidades/{fileName2}";
+                    }
+
                     _context.Update(modalidade);
                     await _context.SaveChangesAsync();
                 }
@@ -155,6 +188,7 @@ namespace SpeedFormAcademias.Controllers
             }
             return View(modalidade);
         }
+
 
         // GET: Modalidades/Delete/5
         public async Task<IActionResult> Delete(int? id)
