@@ -113,7 +113,7 @@ ul {
         margin-bottom: 30px;
     }
 }
-@media(max-width: 767px) {
+@media(max-width: 880px) {
     .row {
         flex-wrap: wrap;
         justify-content: center;

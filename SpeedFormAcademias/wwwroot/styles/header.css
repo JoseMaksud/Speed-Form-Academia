@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .navbarGrupo img {
@@ -50,6 +50,15 @@ header {
 .navbar a {
   text-decoration: none;
   color: white;
+}
+
+.navbarGrupo.social {
+  width: 278px;
+  justify-content: end;
+}
+
+.social {
+  font-size: 20px;
 }
 
 .buttonHeader {
@@ -165,8 +174,16 @@ header {
 }
 
 @media (max-width: 768px) {
+  .imagemInicio img {
+    content: url(../img/bannerinicial-mobile.png);
+  }
+  
   html {
     overflow-x: hidden;
+  }
+
+  .navbarGrupo.social {
+    width: auto;
   }
 
   .menu-toggle {

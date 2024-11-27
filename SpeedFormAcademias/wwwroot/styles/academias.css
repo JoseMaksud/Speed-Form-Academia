@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     padding: 20px 0;
 }
-
 .academias {
     width: 1200px;
     max-width: 95%;
@@ -200,7 +199,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .academias {
         padding: 20px;
         border-radius: 15px;
@@ -253,7 +252,6 @@
     .academiasFooter img {
         width: 90px; 
     }
-
 
     /* +7 Toneladas 2 e 3 sumir */
     .academiasHeader p:nth-child(2),
