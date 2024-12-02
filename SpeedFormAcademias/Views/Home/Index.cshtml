@@ -339,19 +339,19 @@
 
 
 <div class="sessaoAcademias">
-    <div class="academias hidden">
-        <div class="academiasHeader">
+    <div class="academias">
+        <div class="academiasHeader hidden">
             <img src="~/img/iconAcademias.png">
             <p><strong>+7 TON</strong><br> de pesos</p>
             <p><strong>+7 TON</strong><br> de pesos</p>
             <p><strong>+7 TON</strong><br> de pesos</p>
-            <div class="buttonsAcademias">
+            <div class="buttonsAcademias hidden">
                 <button class="btn botao-selecionado" onclick="trocarAcademia('barra')">Barra Bonita</button>
                 <button class="btn" onclick="trocarAcademia('igaracu')">Igaraçu do Tietê</button>
             </div>
         </div>
         <div class="academiasMainContent">
-            <div class="academiasMain">
+            <div class="academiasMain hidden">
                 <h3 id="academiaTitulo">Academia Barra Bonita - SP</h3>
                 <p id="academiaEndereco">Avenida Industrial - Av. Dr. José Erineu Ortigosa, 1178 - Distrito
                     Industrial I, Barra Bonita - SP, 17340-000.</p>
@@ -359,12 +359,12 @@
                     <a asp-action="Unidades" asp-controller="Home">Veja mais</a>
                 </div>
             </div>
-            <div class="academiasImagem">
+            <div class="academiasImagem hidden">
                 <img id="academiaImagem" src="~/img/imagemAcademia1.png">
                 <p>Imagem da academia</p>
             </div>
         </div>
-        <div class="academiasFooter">
+        <div class="academiasFooter hidden">
             <img src="~/img/logoBlackSkull.png">
             <img src="~/img/logoNewMillen.png">
             <img src="~/img/logoSharkPro.png">
@@ -418,6 +418,163 @@
     </div>
 </div>
 
+
+<div class="sessaoCarroselEspecial">
+   <div class="homemain hidden">
+         <!--==================== HOME ====================-->
+         <section class="home">
+            <div class="home__container">
+                <div class="home__data">
+                    <h3 class="home__subtitle">MODALIDADES</h3>
+
+                    <div thumbsSlider="" class="home__titles swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    MUSCULAÇÃO
+                                </h1>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    MUAY THAI
+                                </h1>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    JIU JITSU 
+                                </h1>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    FUNCIONAL 
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    RITMO 
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    SPINNING
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    ZUMBA
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="home__title">
+                                    AEROBOXE
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a asp-action="Modalidades" asp-controller="Home" class="home__button">
+                        CONHEÇA TODAS <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper ">
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-1"></div>
+                                    <img src="~/img/Musculacao.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-2"></div>
+                                    <img src="~/img/MuayThai.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img src="~/img/JiuJitsu.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img src="~/img/Funcional.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img src="~/img/Ritmo.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img  src="~/img/bike.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img src="~/img/Zumba.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <div class="home__card">
+                                    <div class="home__circle home__circle-3"></div>
+                                    <img src="~/img/Boxe.png" alt="image" class="home__img-1">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__footer">
+                    <div class="home__controls">
+                        <!-- pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <div class="home__navigation">
+                            <!-- navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <i class="ri-arrow-left-line"></i>
+                            </div>
+
+                            <div class="swiper-button-next">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/speedformacademia/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/speedformacademiaoficial/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+
+                        <a href="https://linkme.bio/speedformacademia" target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+      </div>    
+</div>
+
+
 <div class="sessaoContato hidden">
     <div class="contatoImagem">
         <img src="~/img/contatoImagem.png">
@@ -430,7 +587,6 @@
     </div>
 </div>
 </div>
-
 
 <script>
     function trocarAcademia(academia) {

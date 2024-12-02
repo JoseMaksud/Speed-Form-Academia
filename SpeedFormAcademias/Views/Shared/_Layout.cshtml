@@ -13,6 +13,7 @@
     <script src="~/js/animation.js" defer></script>
     <script src="~/js/sobrenos.js" defer></script>
     <link rel="icon" href="~/img/avatar.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 </head>
 
 <body>
@@ -142,7 +143,63 @@
     </footer>
 
     <script src="~/js/swiper-bundle.min.js"></script>
+    <script src="~/js/carroselespecial.js"></script>
 </body>
 
 </html>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuSelecionar = document.querySelector(".menuSelecionar a"); // Seleciona o link de "INÍCIO"
+
+    if (!menuSelecionar) return; // Se o elemento não for encontrado, interrompe o script.
+
+    // Obtém o caminho atual da URL
+    const currentPath = window.location.pathname;
+
+    // Remove possíveis barras finais (/) da URL
+    const sanitizedPath = currentPath.replace(/\/$/, "").toLowerCase(); // Normaliza o caminho para evitar problemas de maiúsculas/minúsculas
+
+    // Expressões regulares para rotas com números dinâmicos
+    const detailsUnidadesRegex = /^\/home\/detailsunidades\/\d+$/;
+    const detailsModalidadesRegex = /^\/home\/detailsmodalidades\/\d+$/;
+
+    // Define o texto do menu com base no caminho
+    if (sanitizedPath === "/home" || sanitizedPath === "/") {
+        menuSelecionar.textContent = "INÍCIO"; // Página inicial
+        menuSelecionar.classList.remove("dynamic-text");
+    } else if (sanitizedPath === "/home/unidades") {
+        menuSelecionar.textContent = "ACADEMIAS";
+        menuSelecionar.classList.add("dynamic-text");
+    } else if (sanitizedPath === "/home/modalidades") {
+        menuSelecionar.textContent = "MODALIDADES";
+        menuSelecionar.classList.add("dynamic-text2");
+    } else if (sanitizedPath === "/home/sobrenos") {
+        menuSelecionar.textContent = "SOBRE NÓS";
+        menuSelecionar.classList.add("dynamic-text");
+    } else if (sanitizedPath === "/home/contato") {
+        menuSelecionar.textContent = "CONTATO";
+        menuSelecionar.classList.add("dynamic-text");
+    } else if (detailsUnidadesRegex.test(sanitizedPath)) {
+        menuSelecionar.textContent = "DETALHES";
+        menuSelecionar.classList.add("dynamic-text");
+    } else if (detailsModalidadesRegex.test(sanitizedPath)) {
+        menuSelecionar.textContent = "DETALHES";
+        menuSelecionar.classList.add("dynamic-text");
+    } else {
+        menuSelecionar.textContent = "INÍCIO"; // Caso padrão
+        menuSelecionar.classList.remove("dynamic-text");
+    }
+});
+
+</script>
+
+<style>
+    .navbar .menuSelecionar a.dynamic-text {
+    font-size: 14px; 
+    font-weight: normal; 
+}
+.navbar .menuSelecionar a.dynamic-text2 {
+    font-size: 11.6px;
+}
+</style>

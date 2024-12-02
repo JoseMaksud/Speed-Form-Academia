@@ -34,8 +34,8 @@ public class AppDbSeed
                 DescricaoPT1 = "A MUSCULAÇÃO, uma prática voltada para o FORTALECIMENTO e CRESCIMENTO MUSCULAR, se desenvolveu como uma das atividades físicas mais populares nas academias modernas, como a SPEEDFORM. Utilizando aparelhos e pesos, a MUSCULAÇÃO surgiu como uma forma eficaz de aumentar a MASSA MUSCULAR e melhorar a SAÚDE GERAL. Com a prática constante, é possível observar significativas melhorias na DENSIDADE ÓSSEA e na FLEXIBILIDADE das articulações, além de oferecer suporte no CONTROLE DE PESOS e na SAÚDE CARDIOVASCULAR.",
                 DescricaoPT2 = "Na MUSCULAÇÃO, os exercícios envolvem a CONTRAÇÃO DOS MUSCULOS contra uma resistência externa, que pode ser proporcionada por equipamentos de ginástica ou pesos livres. A principal meta é a HIPERTRODIA MUSCULAR, ou seja, o crescimento dos músculos, que contribui para um AUMENTO DE FORÇA e do CONDICIONAMENTO FÍSICO GERAL. Para alcançar esses objetivos, é fundamental seguir um programa de treinamento cuidadosamente elaborado e SUPERVISIONADOS POR PROFISSIONAIS QUALIFICADOS para evitar lesões e garantir a eficácia dos treinos.",
                 DescricaoPT3 = " Os BENEFÍCIOS DA MUSCULAÇÃO vão além do simples aumento da massa muscular. Ela auxilia na melhora da densidade óssea, o que REDUZ O RISCO DE FRATURAS e problemas como a osteoporose, e pode também ajudar na PERDA DE PESO e no CONTROLE DE AÇÚCAR NO SANGUE. Além disso, a prática regular de MUSCULAÇÃO está associada à redução de fadiga, ansiedade e depressão, e MELHORA A QUALIDADE DO SONO e do EQUILÍBRIO. Apesar desses muitos benefícios, é essencial que a prática seja bem orientada e respeite períodos de descanso para prevenir lesões e garantir a recuperação muscular adequada.",
-                Imagem = @"img/modalidades/7.png",
-                Imagem2 = @"img/modalidades/8.png",
+                Imagem = @"img/modalidades/5.png",
+                Imagem2 = @"img/modalidades/6.png",
             },
             new Modalidade() {
                 Id = 4,
@@ -43,8 +43,8 @@ public class AppDbSeed
                 DescricaoPT1 = "O MUAY THAI, uma arte marcial milenar originária da Tailândia, é amplamente praticado e admirado nas academias brasileiras, e a SPEEDFORM não é diferente. Este esporte começou há cerca de dois mil anos, quando agricultores tailandeses desenvolveram técnicas de combate utilizando socos, chutes, joelhadas e cotoveladas, EVITANDO FERIMENTOS GRAVES que poderiam ocorrer com armas. A tradição é simbolizada pelo uso da corda trançada chamada KRUANG, que representa a graduação do praticante. Com o tempo, o MUAY THAI evoluiu para o que conhecemos hoje, mantendo sua essência de combate com as 'oito armas': punhos, cotovelos, joelhos e canelas.",
                 DescricaoPT2 = "As regras do MUAY THAI incluem o uso de todos os segmentos do corpo para atacar e se defender, o que exige uma técnica refinada e disciplina. A luta se diferencia de outras modalidades, como o KICKBOXING, pelo uso específico das cotoveladas e a prática do CLINCH, onde os lutadores se agarram e utilizam joelhos. Equipamentos de proteção, como luvas, caneleiras e protetores bucais, são essenciais para GARANTIR A SEGURANÇA dos praticantes durante os treinos e competições. Além disso, o MUAY THAI exige um treino rigoroso e técnico, que pode ser adaptado para diferentes níveis de habilidade e objetivos, desde o fitness até a competição.",
                 DescricaoPT3 = "Os benefícios do MUAY THAI são vastos e vão além do condicionamento físico. Praticar esta arte marcial ajuda na perda de peso, queimando entre 600 A 900 CALORIAS por hora, e melhora o REFLEXO, a FLEXIBILIDADE e a AUTOESTIMA. Além disso, o treino contribui para o aumento da massa muscular, alívio do estresse e desenvolvimento do autocontrole e da postura. A filosofia da SPEEDFORM valoriza tanto o APRIMORAMENTO TÉCNICO quanto a promoção da QUALIDADE DE VIDA, fazendo do MUAY THAI uma excelente escolha para quem busca uma atividade física completa e enriquecedora.",
-                Imagem = @"img/modalidades/5.png",
-                Imagem2 = @"img/modalidades/6.png",
+                Imagem = @"img/modalidades/7.png",
+                Imagem2 = @"img/modalidades/8.png",
             },
             new Modalidade() {
                 Id = 5,
